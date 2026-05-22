@@ -48,12 +48,19 @@ def _store_speed_factor(shop_number: str) -> float:
     return rng.uniform(0.85, 1.20)
 
 
+def _us_eastern_today():
+    """Return today's date in US/Eastern — same convention as the production collector."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("US/Eastern")).date()
+    except Exception:
+        return (datetime.now(timezone.utc) - timedelta(hours=5)).date()
+
+
 def _build_payload() -> dict[str, Any]:
     rng = random.Random("luckin-efficiency-seed")
 
-    today = datetime.now(timezone.utc).astimezone()
-    # The pipeline computes in US/Eastern; for seed we just use the runner's local "today".
-    today_date = today.date()
+    today_date = _us_eastern_today()
     retained_start = today_date - timedelta(days=RETENTION_DAYS - 1)
 
     hierarchy = build_hierarchy()
@@ -185,6 +192,7 @@ def _build_payload() -> dict[str, Any]:
 
     payload: dict[str, Any] = {
         "schemaVersion": 1,
+        "_isSeed": True,
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "timezone": "US/Eastern",
         "retentionDays": RETENTION_DAYS,

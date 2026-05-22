@@ -18,8 +18,9 @@ SECRET_ID = os.environ.get("MYSQL_SECRET_ID", "collector/mysql")
 BACKLOG_THRESHOLD_MIN: int = 10
 
 # How many days of granular per-day per-store data the daily payload retains.
-# Long enough to support month-over-month comparisons, short enough to keep payload size small.
-RETENTION_DAYS: int = 40
+# Long enough to support month-over-month comparisons plus a 30-day selection window,
+# short enough to keep payload size manageable.
+RETENTION_DAYS: int = 90
 
 # Staleness thresholds in minutes.
 DAILY_STALE_THRESHOLD_MIN: int = 60 * 24       # daily payload stale after 24h

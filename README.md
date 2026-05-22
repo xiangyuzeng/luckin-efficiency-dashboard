@@ -47,8 +47,10 @@ Deploys to Vercel. The public client never touches a database.
 
 Two payloads, two cadences:
 
-* `data/efficiency.json` — 40 days of per-day × per-store + per-day × per-half-hour × per-store **raw numerators and denominators**. The client weight-aggregates these for any date range × any grain.
+* `data/efficiency.json` — 90 days of per-day × per-store + per-day × per-half-hour × per-store **raw numerators and denominators**. The client weight-aggregates these for any date range × any grain.
 * `data/realtime.json` — current backlog snapshot only. Refreshed on a tight cron and overlaid on top of the daily payload's KPI cards and backlog column.
+
+**Seed mode.** Both payloads carry `"_isSeed": true` when produced by `pipeline/seed_*.py`. On every Vercel build, `pipeline/freshen_payloads.py` runs (via the npm `prebuild` hook) and re-anchors seed dates so the latest day is always today (US/Eastern) and `generatedAt` is current. The script is a no-op on production-pipeline output (which omits the flag), so workflow-generated data passes through untouched.
 
 ---
 

@@ -56,6 +56,7 @@ def _build_payload() -> dict[str, Any]:
 
     payload: dict[str, Any] = {
         "schemaVersion": 1,
+        "_isSeed": True,
         "generatedAt": now_iso,
         "backlogThresholdMin": BACKLOG_THRESHOLD_MIN,
         "staleThresholdMin": REALTIME_STALE_THRESHOLD_MIN,

@@ -125,6 +125,9 @@ export interface ComparisonWindows {
 
 export interface EfficiencyPayload {
   schemaVersion: 1;
+  // Set to `true` by seed scripts so the build-time freshen step knows it may safely
+  // re-anchor dates and timestamps. Production-pipeline output omits this field.
+  _isSeed?: boolean;
   generatedAt: ISO8601;
   timezone: 'US/Eastern';
   retentionDays: number;
@@ -149,6 +152,7 @@ export interface RealtimeStoreRow {
 
 export interface RealtimePayload {
   schemaVersion: 1;
+  _isSeed?: boolean;
   generatedAt: ISO8601;
   backlogThresholdMin: number;
   staleThresholdMin: number;
