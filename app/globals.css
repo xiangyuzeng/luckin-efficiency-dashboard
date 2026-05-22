@@ -1,0 +1,53 @@
+/* Reset + global typography. CSS variables are injected from lib/tokens.ts via app/layout.tsx. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--size-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select { font-family: inherit; font-size: inherit; color: inherit; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Common layout primitives */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+@media (max-width: 1280px) {
+  .container { padding: 0 var(--space-lg); }
+}
+
+/* Two-column grid for the chart pair on wide screens, single column on narrow. */
+.efficiency-charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+@media (max-width: 1024px) {
+  .efficiency-charts-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,50 @@
+name: refresh-realtime
+
+on:
+  schedule:
+    # Every 15 minutes — GitHub Actions reliably runs this cadence,
+    # but does NOT below 10 min. Realtime stale-threshold (lib/types.ts)
+    # is 30 min to absorb the jitter.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # Don't run two realtime refreshes at the same time — last write wins, no race.
+  group: refresh-realtime
+  cancel-in-progress: false
+
+jobs:
+  realtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pipeline deps
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-east-1
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+
+      - name: Git identity
+        run: |
+          git config user.name  "luckin-efficiency-bot"
+          git config user.email "noreply@luckincoffee.com"
+
+      - name: Refresh realtime payload
+        env:
+          AWS_REGION: us-east-1
+          MYSQL_SECRET_ID: collector/mysql
+        run: bash pipeline/refresh_realtime.sh

@@ -1,0 +1,50 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-surface-alt);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--color-primary);
+  color: var(--color-text-inverted);
+  padding: var(--space-lg) 0;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.brand { display: flex; flex-direction: column; gap: 2px; }
+.brandTitle { font-size: 18px; font-weight: 700; }
+.brandSubtitle { font-size: var(--size-small); opacity: 0.85; }
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-xl) 0 var(--space-3xl);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.tabsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.staleOverlay {
+  filter: grayscale(0.5);
+  opacity: 0.85;
+}

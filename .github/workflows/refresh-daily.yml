@@ -1,0 +1,43 @@
+name: refresh-daily
+
+on:
+  schedule:
+    # Daily ~02:30 EST / 03:30 EDT (07:30 UTC)
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pipeline deps
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-east-1
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+
+      - name: Git identity
+        run: |
+          git config user.name  "luckin-efficiency-bot"
+          git config user.email "noreply@luckincoffee.com"
+
+      - name: Refresh payload
+        env:
+          AWS_REGION: us-east-1
+          MYSQL_SECRET_ID: collector/mysql
+        run: bash pipeline/refresh.sh

@@ -1,0 +1,26 @@
+.tablist {
+  display: inline-flex;
+  background: var(--color-gray-100);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  gap: 2px;
+}
+
+.tab {
+  padding: 6px var(--space-lg);
+  border-radius: var(--radius-pill);
+  font-size: var(--size-body);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: background 120ms, color 120ms;
+  white-space: nowrap;
+}
+
+.tab:hover { color: var(--color-text); }
+
+.active {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
