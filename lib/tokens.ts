@@ -1,11 +1,12 @@
 // Design tokens — single source of truth for color, spacing, type, radius, shadow.
-// Palette mirrors /app/luckin-store-ops-dashboard/lib/tokens.ts (Luckin USA brand standard).
+// Palette tuned for Luckin Coffee North America brand: a vibrant deep blue rather
+// than the dark navy used by older internal dashboards.
 
 export const palette = {
-  primary: '#0A2E6C',
-  primaryLight: '#1A4B9C',
-  accent: '#4A90D9',
-  accentLight: '#7CB9E8',
+  primary: '#003D99',
+  primaryLight: '#1956C9',
+  accent: '#4287E5',
+  accentLight: '#6CA9F2',
   success: '#10B981',
   warning: '#F59E0B',
   danger: '#EF4444',

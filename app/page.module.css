@@ -6,9 +6,10 @@
 }
 
 .header {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   color: var(--color-text-inverted);
   padding: var(--space-lg) 0;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
 }
 
 .headerInner {
@@ -19,15 +20,23 @@
 }
 
 .brand { display: flex; flex-direction: column; gap: 2px; }
-.brandTitle { font-size: 18px; font-weight: 700; }
-.brandSubtitle { font-size: var(--size-small); opacity: 0.85; }
+.brandTitle {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.brandSubtitle {
+  font-size: var(--size-small);
+  opacity: 0.85;
+  letter-spacing: 0.01em;
+}
 
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
-  padding: var(--space-xl) 0 var(--space-3xl);
+  gap: var(--space-2xl);
+  padding: var(--space-2xl) 0 var(--space-3xl);
 }
 
 .section {

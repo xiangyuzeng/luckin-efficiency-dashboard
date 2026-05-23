@@ -6,7 +6,6 @@ import { labels } from '@/lib/labels';
 export const metadata: Metadata = {
   title: `${labels.brand} · ${labels.appTitle}`,
   description: labels.appSubtitle,
-  icons: { icon: '/favicon.svg' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

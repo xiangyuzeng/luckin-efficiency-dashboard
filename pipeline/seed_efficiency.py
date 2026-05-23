@@ -110,19 +110,10 @@ def _build_payload() -> dict[str, Any]:
             for slot in SLOTS:
                 intensity = _slot_intensity(slot)
                 if intensity < 0.08:
-                    # Outside open hours — zero row.
-                    interval_rows.append(
-                        {
-                            "date": iso_date,
-                            "slot": slot,
-                            "shopNumber": s.shop_number,
-                            "responseSecondsSum": 0,
-                            "responseOrdersCount": 0,
-                            "makeSecondsSum": 0,
-                            "equivProductsMadeSum": 0.0,
-                            "hasProducts": False,
-                        }
-                    )
+                    # Outside open hours — skip the row entirely. Mirrors the
+                    # production SQL GROUP BY which only emits rows where orders
+                    # exist. Keeps the seed payload roughly proportional to
+                    # actual store operating hours.
                     continue
 
                 # Orders this slot — small noise around a per-store baseline.

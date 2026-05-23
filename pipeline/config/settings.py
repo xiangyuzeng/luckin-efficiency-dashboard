@@ -18,9 +18,11 @@ SECRET_ID = os.environ.get("MYSQL_SECRET_ID", "collector/mysql")
 BACKLOG_THRESHOLD_MIN: int = 10
 
 # How many days of granular per-day per-store data the daily payload retains.
-# Long enough to support month-over-month comparisons plus a 30-day selection window,
-# short enough to keep payload size manageable.
-RETENTION_DAYS: int = 90
+# 180 days gives users six months of history, lets MoM comparisons resolve cleanly
+# for selections up to ~120 days, and still keeps the payload around 18MB raw
+# (after closed-hour rows are dropped — see pipeline/seed_efficiency.py and the
+# production collector's GROUP BY semantics).
+RETENTION_DAYS: int = 180
 
 # Staleness thresholds in minutes.
 DAILY_STALE_THRESHOLD_MIN: int = 60 * 24       # daily payload stale after 24h

@@ -18,6 +18,24 @@ export const labels = {
     exportData: '导出数据',
     rangeNoteOutside: '所选日期超出数据保留窗口，自动夹取至最近可用范围。',
     rangeNoteEmpty: '所选日期范围无运营数据。',
+    presets: {
+      today: '今日',
+      yesterday: '昨日',
+      last7: '近 7 天',
+      last30: '近 30 天',
+      last90: '近 90 天',
+      last180: '近 180 天',
+      custom: '自定义',
+    },
+  },
+
+  cadence: {
+    info: '数据更新频率',
+    title: '数据更新频率',
+    daily: '日常数据：每日 02:30 EST 自动刷新',
+    realtime: '实时压单数据：每 15 分钟刷新',
+    timezone: '所有时间为美国东部时间（US/Eastern）',
+    close: '关闭',
   },
 
   comparison: {
