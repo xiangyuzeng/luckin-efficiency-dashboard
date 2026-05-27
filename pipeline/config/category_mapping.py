@@ -1,15 +1,17 @@
-"""Map t_order_item.one_category_name (English) to the Chinese 现制/外购 buckets.
+"""Map t_order_item.one_category_name to the Chinese 现制/外购 buckets.
 
-The schema probe confirmed one_category_name carries English values for the LKUS
-tenant (Drink, Food, Merchandise) — not 现制/外购 as the original spec assumed.
-This mapping is the single source of truth and is documented in README.md.
+Live probe (2026-05-27) of luckyus_sales_order.t_order_item for tenant=LKUS
+returned four distinct values: Drink, Food, Merchandise, 饮品. The Chinese
+"饮品" is legacy data that classifies the same way as "Drink", so it must
+be in FRESH_MADE — otherwise those rows are silently dropped from equivalent-
+product weighting.
 Pending business sign-off — the metric registry flags affected metrics as
 source='pipeline-mapping' to make the assumption visible in the UI.
 """
 
 from __future__ import annotations
 
-FRESH_MADE: frozenset[str] = frozenset({"Drink", "Food"})
+FRESH_MADE: frozenset[str] = frozenset({"Drink", "Food", "饮品"})
 PURCHASED: frozenset[str] = frozenset({"Merchandise"})
 
 EQUIV_WEIGHT_FRESH = 1.0
