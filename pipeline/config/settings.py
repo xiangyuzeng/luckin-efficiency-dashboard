@@ -27,6 +27,15 @@ GITHUB_REALTIME_PATH = os.environ.get("GITHUB_REALTIME_PATH", "data/realtime.jso
 # Where the scheduler writes its log file. Inside Docker this is mounted as a volume.
 LOG_DIR = os.environ.get("LOG_DIR", "logs")
 
+# ── Realtime cron schedule (consumed by pipeline/scheduler/cron_runner.py) ──
+# Defaults match Luckin USA store hours (Manhattan stores). To deploy in a
+# different region or extend coverage, override these in .env — no code change
+# needed. APScheduler accepts any IANA timezone string and cron-style hour
+# expressions (single hour, range "a-b", list "a,b,c", or "*").
+REALTIME_TIMEZONE = os.environ.get("REALTIME_TIMEZONE", "US/Eastern")
+REALTIME_HOURS = os.environ.get("REALTIME_HOURS", "7-19")
+REALTIME_INTERVAL_MIN = int(os.environ.get("REALTIME_INTERVAL_MIN", "15"))
+
 # 压单 (backlog) policy threshold — keep in sync with lib/metrics.ts BACKLOG_THRESHOLD_MIN.
 BACKLOG_THRESHOLD_MIN: int = 10
 

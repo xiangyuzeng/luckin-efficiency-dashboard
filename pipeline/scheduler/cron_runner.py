@@ -30,6 +30,9 @@ from config.settings import (  # noqa: E402
     GITHUB_DAILY_PATH,
     GITHUB_REALTIME_PATH,
     LOG_DIR,
+    REALTIME_HOURS,
+    REALTIME_INTERVAL_MIN,
+    REALTIME_TIMEZONE,
 )
 from frontend_formatter import main as run_daily_formatter  # noqa: E402
 from realtime_collector import main as run_realtime_collector  # noqa: E402
@@ -102,18 +105,25 @@ def main() -> None:
         name="efficiency daily refresh",
         misfire_grace_time=3600,
     )
-    # Realtime backlog only matters during store operating hours. Restricting
-    # to 07:00–19:45 US/Eastern (timezone-aware → DST handled automatically)
-    # cuts the daily commit count from 96 → ~52 and avoids 12 hours of empty
-    # snapshots when no orders are flowing.
+    # Realtime cadence is policy, not code — REALTIME_TIMEZONE / REALTIME_HOURS
+    # / REALTIME_INTERVAL_MIN live in .env so the schedule can be retuned per
+    # region or extended to 24/7 without a code change. Defaults gate to store
+    # hours so we don't emit 12 hours of empty snapshots overnight.
     scheduler.add_job(
         run_realtime,
-        CronTrigger(hour="7-19", minute="*/15", timezone="US/Eastern"),
+        CronTrigger(
+            hour=REALTIME_HOURS,
+            minute=f"*/{REALTIME_INTERVAL_MIN}",
+            timezone=REALTIME_TIMEZONE,
+        ),
         id="efficiency_realtime",
         name="efficiency realtime snapshot",
         misfire_grace_time=300,
     )
-    logger.info("scheduler started; daily 07:30 UTC, realtime */15 min during 07:00-19:45 ET")
+    logger.info(
+        "scheduler started; daily 07:30 UTC, realtime */%d min during %s %s",
+        REALTIME_INTERVAL_MIN, REALTIME_HOURS, REALTIME_TIMEZONE,
+    )
     # Immediate first runs on container startup so we don't wait up to a day.
     run_daily()
     run_realtime()
