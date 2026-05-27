@@ -44,10 +44,13 @@ class StoreBacklog:
 
 
 def _excluded_clause(alias: str) -> str:
+    # Literal % is emitted as %% — pymysql's mogrify runs `query % args`,
+    # which would otherwise interpret a bare `%'` as a format placeholder
+    # and crash with "not enough arguments for format string".
     parts = []
     for pat in EXCLUDED_SHOP_PATTERNS:
         if pat.startswith("US999"):
-            parts.append(f"{alias} NOT LIKE '{pat}%'")
+            parts.append(f"{alias} NOT LIKE '{pat}%%'")
         else:
             parts.append(f"{alias} <> '{pat}'")
     return " AND ".join(parts)

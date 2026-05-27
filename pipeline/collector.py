@@ -84,13 +84,17 @@ class CollectorOutput:
 
 
 def _excluded_shop_clause(alias: str) -> str:
-    # e.g.  ( ... AND alias.shop_no NOT LIKE 'US999%' AND alias.shop_no <> 'US00000' )
+    # Build a SQL exclusion clause. Every literal % must be emitted as %%
+    # because the SQL is later run through pymysql's mogrify, which calls
+    # `query % args` once. A bare `'US999%'` becomes `%'` to Python's
+    # %-formatter and crashes with "not enough arguments for format string".
+    # e.g. final SQL: ( alias.shop_no NOT LIKE 'US999%' AND alias.shop_no <> 'US00000' )
     parts = []
     for pat in EXCLUDED_SHOP_PATTERNS:
         if pat.endswith("%"):
-            parts.append(f"{alias} NOT LIKE '{pat}'")
+            parts.append(f"{alias} NOT LIKE '{pat.replace('%', '%%')}'")
         elif pat.startswith("US999"):
-            parts.append(f"{alias} NOT LIKE '{pat}%'")
+            parts.append(f"{alias} NOT LIKE '{pat}%%'")
         else:
             parts.append(f"{alias} <> '{pat}'")
     return " AND ".join(parts)
