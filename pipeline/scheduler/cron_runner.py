@@ -102,14 +102,18 @@ def main() -> None:
         name="efficiency daily refresh",
         misfire_grace_time=3600,
     )
+    # Realtime backlog only matters during store operating hours. Restricting
+    # to 07:00–19:45 US/Eastern (timezone-aware → DST handled automatically)
+    # cuts the daily commit count from 96 → ~52 and avoids 12 hours of empty
+    # snapshots when no orders are flowing.
     scheduler.add_job(
         run_realtime,
-        CronTrigger(minute="*/15", timezone="UTC"),
+        CronTrigger(hour="7-19", minute="*/15", timezone="US/Eastern"),
         id="efficiency_realtime",
         name="efficiency realtime snapshot",
         misfire_grace_time=300,
     )
-    logger.info("scheduler started; daily 07:30 UTC, realtime */15 min")
+    logger.info("scheduler started; daily 07:30 UTC, realtime */15 min during 07:00-19:45 ET")
     # Immediate first runs on container startup so we don't wait up to a day.
     run_daily()
     run_realtime()

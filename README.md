@@ -107,10 +107,14 @@ Seed data ships in `data/efficiency.json` and `data/realtime.json` so the UI run
 The container runs APScheduler (`pipeline/scheduler/cron_runner.py`) with two
 jobs and pushes via the GitHub Contents API:
 
-| Job | Cron (UTC) | Output |
+| Job | Cron | Output |
 |---|---|---|
-| daily   | `30 7 * * *`   | `data/efficiency.json` |
-| realtime| `*/15 * * * *` | `data/realtime.json`   |
+| daily   | `30 7 * * *` UTC                              | `data/efficiency.json` |
+| realtime| `*/15 7-19 * * *` US/Eastern (DST-aware)      | `data/realtime.json`   |
+
+Realtime is gated to 07:00–19:45 ET because there are no orders outside store
+hours — running 24/7 would emit 12 hours of empty snapshots per day for no
+gain (52 commits/day instead of 96).
 
 ```bash
 cd pipeline
