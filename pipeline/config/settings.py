@@ -14,6 +14,18 @@ from typing import Any
 AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
 SECRET_ID = os.environ.get("MYSQL_SECRET_ID", "collector/mysql")
 
+# GitHub push config — consumed by pipeline/sender/github_pusher.py.
+# Required when running the in-container scheduler; the legacy refresh*.sh
+# scripts use `git push` and ignore these.
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_REPO = os.environ.get("GITHUB_REPO", "xiangyuzeng/luckin-efficiency-dashboard")
+GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
+GITHUB_DAILY_PATH = os.environ.get("GITHUB_DAILY_PATH", "data/efficiency.json")
+GITHUB_REALTIME_PATH = os.environ.get("GITHUB_REALTIME_PATH", "data/realtime.json")
+
+# Where the scheduler writes its log file. Inside Docker this is mounted as a volume.
+LOG_DIR = os.environ.get("LOG_DIR", "logs")
+
 # 压单 (backlog) policy threshold — keep in sync with lib/metrics.ts BACKLOG_THRESHOLD_MIN.
 BACKLOG_THRESHOLD_MIN: int = 10
 
