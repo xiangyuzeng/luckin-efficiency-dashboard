@@ -27,6 +27,13 @@ GITHUB_REALTIME_PATH = os.environ.get("GITHUB_REALTIME_PATH", "data/realtime.jso
 # Where the scheduler writes its log file. Inside Docker this is mounted as a volume.
 LOG_DIR = os.environ.get("LOG_DIR", "logs")
 
+# ── Daily cron schedule ─────────────────────────────────────────────────
+# Defaults: 01:00 US/Eastern — off-peak both for MySQL load and for any
+# operators watching dashboards. Override per environment in .env.
+DAILY_TIMEZONE = os.environ.get("DAILY_TIMEZONE", "US/Eastern")
+DAILY_HOUR = int(os.environ.get("DAILY_HOUR", "1"))
+DAILY_MINUTE = int(os.environ.get("DAILY_MINUTE", "0"))
+
 # ── Realtime cron schedule (consumed by pipeline/scheduler/cron_runner.py) ──
 # Defaults match Luckin USA store hours (Manhattan stores). To deploy in a
 # different region or extend coverage, override these in .env — no code change

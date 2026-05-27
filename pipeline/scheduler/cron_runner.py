@@ -27,6 +27,9 @@ from apscheduler.schedulers.blocking import BlockingScheduler  # noqa: E402
 from apscheduler.triggers.cron import CronTrigger  # noqa: E402
 
 from config.settings import (  # noqa: E402
+    DAILY_HOUR,
+    DAILY_MINUTE,
+    DAILY_TIMEZONE,
     GITHUB_DAILY_PATH,
     GITHUB_REALTIME_PATH,
     LOG_DIR,
@@ -100,7 +103,7 @@ def main() -> None:
     scheduler = BlockingScheduler(timezone="UTC")
     scheduler.add_job(
         run_daily,
-        CronTrigger(hour=7, minute=30, timezone="UTC"),
+        CronTrigger(hour=DAILY_HOUR, minute=DAILY_MINUTE, timezone=DAILY_TIMEZONE),
         id="efficiency_daily",
         name="efficiency daily refresh",
         misfire_grace_time=3600,
@@ -121,7 +124,8 @@ def main() -> None:
         misfire_grace_time=300,
     )
     logger.info(
-        "scheduler started; daily 07:30 UTC, realtime */%d min during %s %s",
+        "scheduler started; daily %02d:%02d %s, realtime */%d min during %s %s",
+        DAILY_HOUR, DAILY_MINUTE, DAILY_TIMEZONE,
         REALTIME_INTERVAL_MIN, REALTIME_HOURS, REALTIME_TIMEZONE,
     )
     # Immediate first runs on container startup so we don't wait up to a day.
