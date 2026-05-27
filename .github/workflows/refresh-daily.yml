@@ -1,9 +1,12 @@
 name: refresh-daily
 
+# Manual-only fallback path. The canonical refresh runs in Docker on an
+# internal host with MySQL VPC reach (see pipeline/docker-compose.yml,
+# daily 07:30 UTC handled by APScheduler). The schedule trigger was
+# removed because GitHub-hosted runners can't reach the production RDS;
+# kept as workflow_dispatch in case a self-hosted runner is provisioned.
+
 on:
-  schedule:
-    # Daily ~02:30 EST / 03:30 EDT (07:30 UTC)
-    - cron: "30 7 * * *"
   workflow_dispatch:
 
 permissions:

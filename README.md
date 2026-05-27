@@ -102,19 +102,43 @@ Seed data ships in `data/efficiency.json` and `data/realtime.json` so the UI run
 
 ## Production pipeline
 
-Three refresh paths are supported. Choose one for daily, optionally a different one for realtime:
+### A. Docker on an internal host (canonical)
 
-| Path | Daily | Realtime | Notes |
-|---|---|---|---|
-| **GitHub Actions** (`.github/workflows/`) | ✅ `30 7 * * *` | ✅ `*/15 * * * *` | Recommended. Runner needs network reach into the internal MySQL — same constraint as the daily workflow. Realtime stale-threshold is **30 min** to absorb GHA cron jitter (cannot reliably go below 10 min). |
-| **Internal EC2 cron** | ✅ | ✅ down to ~1 min | `bash pipeline/refresh.sh` / `bash pipeline/refresh_realtime.sh`. Uses pymysql + AWS Secrets Manager (`collector/mysql`, `us-east-1`). |
-| **mcp-db-gateway** (`http://10.238.3.43:8080`) | optional | optional | For ad-hoc backfill / debugging — wrap the SQL in `pipeline/collector.py`'s queries via the gateway tools. |
+The container runs APScheduler (`pipeline/scheduler/cron_runner.py`) with two
+jobs and pushes via the GitHub Contents API:
 
-Required secrets:
+| Job | Cron (UTC) | Output |
+|---|---|---|
+| daily   | `30 7 * * *`   | `data/efficiency.json` |
+| realtime| `*/15 * * * *` | `data/realtime.json`   |
 
-* `AWS_ROLE_ARN` — assumed by `aws-actions/configure-aws-credentials`
-* The role must have `secretsmanager:GetSecretValue` on `arn:aws:secretsmanager:us-east-1:*:secret:collector/mysql-*`
-* The secret value is JSON: `{ host, port, username, password, dbname? }`
+```bash
+cd pipeline
+cp .env.example .env        # fill in AWS Secrets Manager + GITHUB_TOKEN
+docker compose up -d --build
+docker compose logs -f pipeline
+```
+
+The host must be inside the VPC that can reach the production RDS (GitHub-hosted
+runners can't, which is why the GHA path is no longer scheduled). AWS creds come
+from either an IAM role on the host or `AWS_ACCESS_KEY_ID` in `.env`. The secret
+value at `collector/mysql` is JSON: `{ host, port, username, password, dbname? }`.
+
+### B. Manual bash entrypoints (ad-hoc / dev)
+
+Same Python code, but uses `git push` and runs once:
+
+```bash
+bash pipeline/refresh.sh           # daily — writes + pushes efficiency.json
+bash pipeline/refresh_realtime.sh  # realtime — writes + pushes realtime.json
+```
+
+### C. GitHub Actions (manual fallback only)
+
+`.github/workflows/refresh-daily.yml` and `refresh-realtime.yml` are kept as
+`workflow_dispatch`-only — their schedules were removed because GitHub-hosted
+runners can't reach the production RDS. Useful only after wiring a self-hosted
+runner inside the VPC.
 
 ---
 

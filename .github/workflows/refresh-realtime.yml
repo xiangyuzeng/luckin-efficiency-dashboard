@@ -1,11 +1,12 @@
 name: refresh-realtime
 
+# Manual-only fallback path. The canonical refresh runs in Docker on an
+# internal host with MySQL VPC reach (see pipeline/docker-compose.yml,
+# */15 cron handled by APScheduler). The schedule trigger was removed
+# because GitHub-hosted runners can't reach the production RDS; kept as
+# workflow_dispatch only for future revival.
+
 on:
-  schedule:
-    # Every 15 minutes — GitHub Actions reliably runs this cadence,
-    # but does NOT below 10 min. Realtime stale-threshold (lib/types.ts)
-    # is 30 min to absorb the jitter.
-    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
