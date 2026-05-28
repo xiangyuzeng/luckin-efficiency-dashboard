@@ -122,6 +122,16 @@ def build_payload() -> dict:
             "backlogRate": "confirmed",
             "equivProductsMade": "pipeline-mapping",
         },
+        # All metrics in this payload come from the daily `collect()` call above —
+        # stamp the same timestamp on every metric so the ?debug=1 overlay can
+        # show last-run age. Realtime overlay timestamp lives on realtime.json.
+        "collectorTimestamps": {
+            "daily": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "efficiencyDuration": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "avgOrderResponse":   datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "avgEquivMakeTime":   datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "equivProductsMade":  datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        },
     }
 
 

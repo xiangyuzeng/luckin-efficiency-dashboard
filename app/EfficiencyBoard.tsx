@@ -11,6 +11,7 @@ import { IntervalTable } from '@/components/IntervalTable/IntervalTable';
 import { IntervalCurve } from '@/components/Charts/IntervalCurve';
 import { StoreCurve } from '@/components/Charts/StoreCurve';
 import { ExportButton } from '@/components/ExportButton/ExportButton';
+import { DebugOverlay } from '@/components/Debug/DebugOverlay';
 import {
   aggregate,
   aggregateInterval,
@@ -72,6 +73,11 @@ export function EfficiencyBoard({ efficiency, realtime }: Props) {
     shopNumber: null,
   }));
   const [grain, setGrainState] = useState<Grain>('store');
+  const [debugEnabled, setDebugEnabled] = useState(false);
+
+  useEffect(() => {
+    setDebugEnabled(new URLSearchParams(window.location.search).get('debug') === '1');
+  }, []);
 
   // Hydrate from URL after mount. Avoids useSearchParams which forces the whole subtree to client-only rendering.
   useEffect(() => {
@@ -301,6 +307,17 @@ export function EfficiencyBoard({ efficiency, realtime }: Props) {
           </div>
         </section>
       </main>
+
+      {debugEnabled && (
+        <DebugOverlay
+          efficiency={efficiency}
+          realtime={realtime}
+          filteredDaily={filteredDaily}
+          rangeFrom={filter.startDate}
+          rangeTo={filter.endDate}
+          activeStoreCount={activeStores.length}
+        />
+      )}
     </div>
   );
 }

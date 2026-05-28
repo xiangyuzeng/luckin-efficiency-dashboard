@@ -174,6 +174,91 @@ def build_payload() -> dict:
     }
 
 
+def _us_eastern_today_iso() -> str:
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("US/Eastern")).date().isoformat()
+    except Exception:
+        from datetime import timedelta
+        return (datetime.now(timezone.utc) - timedelta(hours=5)).date().isoformat()
+
+
+def upsert_today_into_efficiency(efficiency_path: Path) -> None:
+    """Re-collect today's daily + interval rows and merge into efficiency.json.
+
+    Without this, intra-day half-hour slots after the last daily refresh are
+    frozen — the IntervalTable shows `—` for every slot from "last refresh" to
+    "now". Running this on the 15-min realtime cron brings the table up to ~15 min
+    freshness during ET store hours, without changing the schema.
+
+    Only today's rows are touched; all prior dates pass through unchanged.
+    """
+    from collector import collect
+    from config.store_geography import STORES
+
+    if not efficiency_path.exists():
+        print(f"upsert: {efficiency_path} not found, skipping")
+        return
+
+    today_iso = _us_eastern_today_iso()
+    valid_shops = {s.shop_number for s in STORES}
+
+    out = collect(days=1)
+
+    # Build today daily rows for every valid shop, zero-filling silent ones.
+    new_daily: list[dict] = []
+    for shop in sorted(valid_shops):
+        acc = out.daily.get((today_iso, shop))
+        if acc is None:
+            new_daily.append({
+                "date": today_iso, "shopNumber": shop, "operatingToday": False,
+                "totalOrders": 0, "completedOrders": 0, "backlogOrders": 0,
+                "responseSecondsSum": 0, "responseOrdersCount": 0,
+                "makeSecondsSum": 0, "equivProductsMadeSum": 0.0,
+                "freshMadeCount": 0, "purchasedCount": 0,
+            })
+        else:
+            new_daily.append({
+                "date": acc.date, "shopNumber": acc.shop_number, "operatingToday": acc.operating_today,
+                "totalOrders": acc.total_orders, "completedOrders": acc.completed_orders,
+                "backlogOrders": acc.backlog_orders,
+                "responseSecondsSum": acc.response_seconds_sum,
+                "responseOrdersCount": acc.response_orders_count,
+                "makeSecondsSum": acc.make_seconds_sum,
+                "equivProductsMadeSum": round(acc.equiv_products_made_sum, 4),
+                "freshMadeCount": acc.fresh_made_count,
+                "purchasedCount": acc.purchased_count,
+            })
+
+    new_intervals: list[dict] = []
+    for acc in out.interval.values():
+        if acc.date != today_iso or acc.shop_number not in valid_shops:
+            continue
+        new_intervals.append({
+            "date": acc.date, "slot": acc.slot, "shopNumber": acc.shop_number,
+            "responseSecondsSum": acc.response_seconds_sum,
+            "responseOrdersCount": acc.response_orders_count,
+            "makeSecondsSum": acc.make_seconds_sum,
+            "equivProductsMadeSum": round(acc.equiv_products_made_sum, 4),
+            "hasProducts": acc.has_products,
+        })
+
+    existing = json.loads(efficiency_path.read_text(encoding="utf-8"))
+    existing["dailyStoreRows"] = [r for r in existing.get("dailyStoreRows", []) if r["date"] != today_iso] + new_daily
+    existing["intervalRows"]   = [r for r in existing.get("intervalRows",   []) if r["date"] != today_iso] + new_intervals
+    existing["generatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    ts = existing["generatedAt"]
+    existing.setdefault("collectorTimestamps", {})
+    for k in ("daily", "efficiencyDuration", "avgOrderResponse", "avgEquivMakeTime", "equivProductsMade"):
+        existing["collectorTimestamps"][k] = ts
+
+    # Atomic write: temp file in same dir, then rename.
+    tmp = efficiency_path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(efficiency_path)
+    print(f"upsert: efficiency.json today={today_iso} daily={len(new_daily)} intervals={len(new_intervals)}")
+
+
 def main() -> int:
     try:
         payload = build_payload()
@@ -184,6 +269,15 @@ def main() -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {out} — backlog equiv {payload['global']['backlogEquivProducts']}")
+
+    # Best-effort intra-day intervals upsert. Failure here is non-fatal — the
+    # next daily refresh will catch up regardless.
+    try:
+        efficiency_path = Path(__file__).resolve().parent.parent / "data" / "efficiency.json"
+        upsert_today_into_efficiency(efficiency_path)
+    except Exception as exc:  # noqa: BLE001
+        print(f"upsert_today_into_efficiency: warn — {exc}", file=sys.stderr)
+
     return 0
 
 

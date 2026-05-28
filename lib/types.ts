@@ -142,6 +142,8 @@ export interface EfficiencyPayload {
   comparisonWindows: ComparisonWindows;
 
   sources: Partial<Record<MetricKey, SourceConfidence>>;
+  // Optional — per-collector last-run timestamps for the ?debug=1 overlay.
+  collectorTimestamps?: Partial<Record<MetricKey | 'realtime' | 'daily', ISO8601>>;
 }
 
 export interface RealtimeStoreRow {
