@@ -21,9 +21,16 @@ if [[ "$NO_PUSH" == "1" ]]; then
   exit 0
 fi
 
-if ! git diff --quiet -- data/realtime.json; then
-  echo "[refresh-realtime] committing data/realtime.json"
-  git add data/realtime.json
+# realtime_collector.py also upserts today's rows into data/efficiency.json
+# (intra-day intervals). Include that file in the commit so Vercel sees fresh
+# half-hour slots without waiting for the next daily refresh.
+CHANGED=()
+git diff --quiet -- data/realtime.json   || CHANGED+=(data/realtime.json)
+git diff --quiet -- data/efficiency.json || CHANGED+=(data/efficiency.json)
+
+if [[ ${#CHANGED[@]} -gt 0 ]]; then
+  echo "[refresh-realtime] committing ${CHANGED[*]}"
+  git add "${CHANGED[@]}"
   git commit -m "data: realtime $(date -u +'%Y-%m-%dT%H:%MZ')"
   git push
 else
