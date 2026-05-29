@@ -81,7 +81,12 @@ def run_daily() -> None:
 
 
 def run_realtime() -> None:
-    """Realtime backlog snapshot → push realtime.json. Never raises."""
+    """Realtime backlog snapshot → push realtime.json + today-upserted efficiency.json.
+
+    realtime_collector.main() also upserts today's dailyStoreRows + intervalRows
+    into data/efficiency.json so the half-hour interval table stays current
+    between daily refreshes. Both files are pushed here. Never raises.
+    """
     logger.info("=== run_realtime start ===")
     t0 = time.monotonic()
     try:
@@ -92,8 +97,14 @@ def run_realtime() -> None:
         if not REALTIME_PAYLOAD.exists():
             logger.error("realtime.json was not produced; skipping push")
             return
-        ok = push_file(REALTIME_PAYLOAD, GITHUB_REALTIME_PATH, f"data: realtime {_ts()}")
-        logger.info("realtime push ok=%s", ok)
+        ok_rt = push_file(REALTIME_PAYLOAD, GITHUB_REALTIME_PATH, f"data: realtime {_ts()}")
+        logger.info("realtime push ok=%s", ok_rt)
+        # Push the intra-day-upserted efficiency.json too. If the upsert was a
+        # no-op (content matches remote), GitHub returns 422 and push_file logs
+        # a warning but the scheduler keeps going.
+        if DAILY_PAYLOAD.exists():
+            ok_eff = push_file(DAILY_PAYLOAD, GITHUB_DAILY_PATH, f"data: intra-day refresh {_ts()}")
+            logger.info("intra-day efficiency push ok=%s", ok_eff)
     except Exception:
         logger.error("run_realtime FAILED:\n%s", traceback.format_exc())
     logger.info("=== run_realtime done in %.1fs ===", time.monotonic() - t0)
