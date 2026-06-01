@@ -2,3 +2,7 @@ pymysql==1.1.1
 boto3>=1.34
 requests>=2.31
 APScheduler==3.10.4
+# IANA tz database for zoneinfo.ZoneInfo("US/Eastern"). python:3.11-slim ships
+# no system tzdata; without this the collectors silently fall back to a fixed
+# UTC-5 offset (wrong under EDT, off-by-one date in the 04:00-05:00 UTC window).
+tzdata>=2024.1
