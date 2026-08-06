@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T23:45:10Z",
+  "generatedAt": "2026-08-06T05:01:53Z",
   "timezone": "US/Eastern",
   "retentionDays": 180,
   "backlogThresholdMin": 10,
@@ -160,174 +160,6 @@
     "source": "pipeline-constant"
   },
   "dailyStoreRows": [
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00001",
-      "operatingToday": true,
-      "totalOrders": 279,
-      "completedOrders": 276,
-      "backlogOrders": 1,
-      "responseSecondsSum": 2406,
-      "responseOrdersCount": 276,
-      "makeSecondsSum": 40164,
-      "equivProductsMadeSum": 360.0,
-      "freshMadeCount": 360,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00002",
-      "operatingToday": true,
-      "totalOrders": 134,
-      "completedOrders": 134,
-      "backlogOrders": 0,
-      "responseSecondsSum": 1223,
-      "responseOrdersCount": 134,
-      "makeSecondsSum": 16794,
-      "equivProductsMadeSum": 192.0,
-      "freshMadeCount": 192,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00003",
-      "operatingToday": true,
-      "totalOrders": 121,
-      "completedOrders": 119,
-      "backlogOrders": 0,
-      "responseSecondsSum": 1059,
-      "responseOrdersCount": 119,
-      "makeSecondsSum": 12672,
-      "equivProductsMadeSum": 164.0,
-      "freshMadeCount": 164,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00004",
-      "operatingToday": true,
-      "totalOrders": 130,
-      "completedOrders": 130,
-      "backlogOrders": 0,
-      "responseSecondsSum": 1137,
-      "responseOrdersCount": 130,
-      "makeSecondsSum": 25496,
-      "equivProductsMadeSum": 191.0,
-      "freshMadeCount": 191,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00005",
-      "operatingToday": true,
-      "totalOrders": 185,
-      "completedOrders": 183,
-      "backlogOrders": 1,
-      "responseSecondsSum": 1592,
-      "responseOrdersCount": 183,
-      "makeSecondsSum": 22702,
-      "equivProductsMadeSum": 261.0,
-      "freshMadeCount": 261,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00006",
-      "operatingToday": true,
-      "totalOrders": 160,
-      "completedOrders": 160,
-      "backlogOrders": 4,
-      "responseSecondsSum": 1440,
-      "responseOrdersCount": 160,
-      "makeSecondsSum": 39306,
-      "equivProductsMadeSum": 227.0,
-      "freshMadeCount": 227,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00008",
-      "operatingToday": true,
-      "totalOrders": 97,
-      "completedOrders": 97,
-      "backlogOrders": 2,
-      "responseSecondsSum": 872,
-      "responseOrdersCount": 97,
-      "makeSecondsSum": 22023,
-      "equivProductsMadeSum": 147.0,
-      "freshMadeCount": 147,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00012",
-      "operatingToday": false,
-      "totalOrders": 0,
-      "completedOrders": 0,
-      "backlogOrders": 0,
-      "responseSecondsSum": 0,
-      "responseOrdersCount": 0,
-      "makeSecondsSum": 0,
-      "equivProductsMadeSum": 0.0,
-      "freshMadeCount": 0,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00020",
-      "operatingToday": true,
-      "totalOrders": 152,
-      "completedOrders": 147,
-      "backlogOrders": 0,
-      "responseSecondsSum": 1282,
-      "responseOrdersCount": 147,
-      "makeSecondsSum": 21962,
-      "equivProductsMadeSum": 206.0,
-      "freshMadeCount": 206,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00024",
-      "operatingToday": true,
-      "totalOrders": 128,
-      "completedOrders": 123,
-      "backlogOrders": 2,
-      "responseSecondsSum": 1094,
-      "responseOrdersCount": 123,
-      "makeSecondsSum": 20090,
-      "equivProductsMadeSum": 169.0,
-      "freshMadeCount": 169,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00025",
-      "operatingToday": true,
-      "totalOrders": 373,
-      "completedOrders": 365,
-      "backlogOrders": 18,
-      "responseSecondsSum": 3082,
-      "responseOrdersCount": 365,
-      "makeSecondsSum": 115439,
-      "equivProductsMadeSum": 509.0,
-      "freshMadeCount": 509,
-      "purchasedCount": 0
-    },
-    {
-      "date": "2026-02-07",
-      "shopNumber": "US00027",
-      "operatingToday": false,
-      "totalOrders": 0,
-      "completedOrders": 0,
-      "backlogOrders": 0,
-      "responseSecondsSum": 0,
-      "responseOrdersCount": 0,
-      "makeSecondsSum": 0,
-      "equivProductsMadeSum": 0.0,
-      "freshMadeCount": 0,
-      "purchasedCount": 0
-    },
     {
       "date": "2026-02-08",
       "shopNumber": "US00001",
@@ -30265,13 +30097,13 @@
       "shopNumber": "US00003",
       "operatingToday": true,
       "totalOrders": 256,
-      "completedOrders": 250,
+      "completedOrders": 255,
       "backlogOrders": 0,
-      "responseSecondsSum": 2142,
-      "responseOrdersCount": 250,
-      "makeSecondsSum": 29293,
-      "equivProductsMadeSum": 316.0,
-      "freshMadeCount": 316,
+      "responseSecondsSum": 2186,
+      "responseOrdersCount": 255,
+      "makeSecondsSum": 30093,
+      "equivProductsMadeSum": 325.0,
+      "freshMadeCount": 325,
       "purchasedCount": 0
     },
     {
@@ -30306,14 +30138,14 @@
       "date": "2026-08-05",
       "shopNumber": "US00006",
       "operatingToday": true,
-      "totalOrders": 408,
-      "completedOrders": 329,
+      "totalOrders": 409,
+      "completedOrders": 409,
       "backlogOrders": 14,
-      "responseSecondsSum": 2961,
-      "responseOrdersCount": 329,
-      "makeSecondsSum": 85504,
-      "equivProductsMadeSum": 432.0,
-      "freshMadeCount": 432,
+      "responseSecondsSum": 3655,
+      "responseOrdersCount": 409,
+      "makeSecondsSum": 125352,
+      "equivProductsMadeSum": 540.0,
+      "freshMadeCount": 540,
       "purchasedCount": 0
     },
     {
@@ -30376,14 +30208,14 @@
       "date": "2026-08-05",
       "shopNumber": "US00025",
       "operatingToday": true,
-      "totalOrders": 416,
-      "completedOrders": 338,
+      "totalOrders": 418,
+      "completedOrders": 417,
       "backlogOrders": 5,
-      "responseSecondsSum": 2937,
-      "responseOrdersCount": 338,
-      "makeSecondsSum": 65543,
-      "equivProductsMadeSum": 476.0,
-      "freshMadeCount": 476,
+      "responseSecondsSum": 3609,
+      "responseOrdersCount": 417,
+      "makeSecondsSum": 83512,
+      "equivProductsMadeSum": 587.0,
+      "freshMadeCount": 587,
       "purchasedCount": 0
     },
     {
@@ -30399,2269 +30231,177 @@
       "equivProductsMadeSum": 563.0,
       "freshMadeCount": 563,
       "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00001",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00002",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00003",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00004",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00005",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00006",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00008",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00012",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00020",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00024",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00025",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
+    },
+    {
+      "date": "2026-08-06",
+      "shopNumber": "US00027",
+      "operatingToday": false,
+      "totalOrders": 0,
+      "completedOrders": 0,
+      "backlogOrders": 0,
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "freshMadeCount": 0,
+      "purchasedCount": 0
     }
   ],
   "intervalRows": [
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 266,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 383,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 162,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 93,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 127,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 72,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 158,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 252,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 44,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 1436,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 754,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 133,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 93,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 1174,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 953,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 346,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "07:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 8,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 81,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 1434,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 715,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 63,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1132,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 107,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 1524,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 38,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 318,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 398,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 213,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 422,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 28,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 290,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 135,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 2506,
-      "equivProductsMadeSum": 21.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 19,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 227,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 133,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 28,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 88,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 57,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 612,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 62,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 787,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 38,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 422,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "08:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 56,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 576,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 58,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 761,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 98,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 1592,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 202,
-      "responseOrdersCount": 24,
-      "makeSecondsSum": 7211,
-      "equivProductsMadeSum": 32.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 91,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 925,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 45,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 631,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 25,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 452,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 90,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1476,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 92,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 517,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 171,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 210,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 83,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 732,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 185,
-      "responseOrdersCount": 21,
-      "makeSecondsSum": 8344,
-      "equivProductsMadeSum": 35.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 102,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2767,
-      "equivProductsMadeSum": 19.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 73,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 385,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 81,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1055,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 78,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 672,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 85,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 632,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 105,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 1628,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 325,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "09:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 572,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 135,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 1895,
-      "equivProductsMadeSum": 19.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 117,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 621,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 124,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 2352,
-      "equivProductsMadeSum": 24.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 130,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 7658,
-      "equivProductsMadeSum": 25.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 70,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1483,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 64,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 858,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 76,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 869,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 89,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 781,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 347,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 189,
-      "responseOrdersCount": 23,
-      "makeSecondsSum": 8311,
-      "equivProductsMadeSum": 31.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 102,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2608,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 37,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 695,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 90,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 815,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 64,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 856,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 82,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 2022,
-      "equivProductsMadeSum": 18.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 145,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 2798,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 90,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 2154,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 85,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 918,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "10:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 40,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 449,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 78,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1201,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 133,
-      "responseOrdersCount": 15,
-      "makeSecondsSum": 2679,
-      "equivProductsMadeSum": 24.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 117,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 810,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 47,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 782,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 67,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1336,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 100,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1672,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 82,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1237,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 89,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 1252,
-      "equivProductsMadeSum": 18.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 103,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 1924,
-      "equivProductsMadeSum": 19.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 145,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 1823,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 201,
-      "responseOrdersCount": 25,
-      "makeSecondsSum": 8097,
-      "equivProductsMadeSum": 41.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 154,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 3427,
-      "equivProductsMadeSum": 22.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 103,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1738,
-      "equivProductsMadeSum": 16.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 45,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 828,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 70,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1833,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 97,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1522,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 143,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 1421,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 55,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1938,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 75,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1432,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "11:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 109,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 256,
-      "responseOrdersCount": 30,
-      "makeSecondsSum": 15248,
-      "equivProductsMadeSum": 37.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 72,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 992,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 83,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1619,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 104,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 2648,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 106,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 1411,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 87,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 1328,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 61,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1131,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 134,
-      "responseOrdersCount": 15,
-      "makeSecondsSum": 1494,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 54,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1815,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 55,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 436,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 91,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 2095,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 104,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 2353,
-      "equivProductsMadeSum": 21.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 100,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1839,
-      "equivProductsMadeSum": 16.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 139,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 4275,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 51,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 810,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 38,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 386,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 57,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 839,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 25,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 431,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 109,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "12:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 240,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 178,
-      "responseOrdersCount": 21,
-      "makeSecondsSum": 4209,
-      "equivProductsMadeSum": 25.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 78,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1011,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 68,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 410,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 56,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1010,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 86,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 2699,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 36,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 365,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 156,
-      "responseOrdersCount": 19,
-      "makeSecondsSum": 2900,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 56,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 847,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 541,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 30,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 709,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 93,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1266,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 72,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1217,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 111,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 3021,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 43,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 738,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 560,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 66,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1189,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 65,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 711,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 110,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 2307,
-      "equivProductsMadeSum": 21.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 55,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1009,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "13:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 26,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 450,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 96,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2107,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 107,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 2946,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 152,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 2891,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 611,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 64,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 973,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 150,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 8585,
-      "equivProductsMadeSum": 29.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 72,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1899,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 137,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 25,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 665,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 43,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 824,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 66,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 989,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 80,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1056,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 37,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 422,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 28,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 529,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 90,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 3490,
-      "equivProductsMadeSum": 19.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 62,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1792,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 72,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 870,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 125,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 1860,
-      "equivProductsMadeSum": 19.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 191,
-      "responseOrdersCount": 22,
-      "makeSecondsSum": 8326,
-      "equivProductsMadeSum": 33.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "14:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 26,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 738,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 73,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1515,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 158,
-      "responseOrdersCount": 22,
-      "makeSecondsSum": 8787,
-      "equivProductsMadeSum": 31.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 77,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1642,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 44,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 788,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 151,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 2475,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 60,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1264,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 906,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 82,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1405,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 60,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 905,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 249,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 71,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 993,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 59,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1008,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 61,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 2505,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 102,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2383,
-      "equivProductsMadeSum": 16.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 96,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2216,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 190,
-      "responseOrdersCount": 22,
-      "makeSecondsSum": 6201,
-      "equivProductsMadeSum": 28.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 158,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 3884,
-      "equivProductsMadeSum": 25.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 37,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 448,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 2896,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "15:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 465,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 47,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 737,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 88,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 2833,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 58,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1581,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 149,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 5614,
-      "equivProductsMadeSum": 20.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 52,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 993,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 100,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 1614,
-      "equivProductsMadeSum": 15.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 71,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1710,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 742,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 47,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 1852,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 31,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 667,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 152,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 3678,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 47,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 673,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 65,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 6428,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 62,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1097,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 115,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 2232,
-      "equivProductsMadeSum": 14.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 70,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1165,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 47,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 467,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1439,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "16:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 465,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 61,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1196,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 71,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1207,
-      "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 73,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1285,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 203,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 46,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 727,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 58,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 2324,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 1042,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 37,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 616,
-      "equivProductsMadeSum": 5.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 307,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 146,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 566,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 74,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 902,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 38,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 486,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 67,
-      "responseOrdersCount": 8,
-      "makeSecondsSum": 1629,
-      "equivProductsMadeSum": 9.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 11,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 26,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 56,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1414,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 138,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 78,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "17:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 8,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 147,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 91,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2963,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 844,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 36,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 551,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 390,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 160,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 500,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 8,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 144,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "18:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 8,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 79,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:00",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 19,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 387,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 87,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 498,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 416,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 250,
-      "equivProductsMadeSum": 2.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "19:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 36,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 485,
-      "equivProductsMadeSum": 7.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "20:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 232,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-02-07",
-      "slot": "20:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 8,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 111,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
     {
       "date": "2026-02-08",
       "slot": "07:00",
@@ -533165,21 +530905,21 @@
     {
       "date": "2026-08-05",
       "slot": "07:00",
-      "shopNumber": "US00027",
-      "responseSecondsSum": 55,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 515,
-      "equivProductsMadeSum": 6.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "07:00",
       "shopNumber": "US00020",
       "responseSecondsSum": 75,
       "responseOrdersCount": 11,
       "makeSecondsSum": 1541,
       "equivProductsMadeSum": 14.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "07:00",
+      "shopNumber": "US00027",
+      "responseSecondsSum": 55,
+      "responseOrdersCount": 6,
+      "makeSecondsSum": 515,
+      "equivProductsMadeSum": 6.0,
       "hasProducts": true
     },
     {
@@ -533226,10 +530966,10 @@
       "date": "2026-08-05",
       "slot": "07:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 98,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1331,
-      "equivProductsMadeSum": 14.0,
+      "responseSecondsSum": 114,
+      "responseOrdersCount": 13,
+      "makeSecondsSum": 1707,
+      "equivProductsMadeSum": 20.0,
       "hasProducts": true
     },
     {
@@ -533256,10 +530996,10 @@
       "date": "2026-08-05",
       "slot": "07:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1307,
-      "equivProductsMadeSum": 7.0,
+      "responseSecondsSum": 71,
+      "responseOrdersCount": 8,
+      "makeSecondsSum": 1654,
+      "equivProductsMadeSum": 10.0,
       "hasProducts": true
     },
     {
@@ -533285,21 +531025,21 @@
     {
       "date": "2026-08-05",
       "slot": "07:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 106,
-      "responseOrdersCount": 12,
-      "makeSecondsSum": 1549,
-      "equivProductsMadeSum": 16.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "07:30",
       "shopNumber": "US00003",
       "responseSecondsSum": 83,
       "responseOrdersCount": 9,
       "makeSecondsSum": 554,
       "equivProductsMadeSum": 12.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "07:30",
+      "shopNumber": "US00001",
+      "responseSecondsSum": 106,
+      "responseOrdersCount": 12,
+      "makeSecondsSum": 1549,
+      "equivProductsMadeSum": 16.0,
       "hasProducts": true
     },
     {
@@ -533315,21 +531055,21 @@
     {
       "date": "2026-08-05",
       "slot": "07:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 220,
-      "responseOrdersCount": 25,
-      "makeSecondsSum": 3632,
-      "equivProductsMadeSum": 34.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "07:30",
       "shopNumber": "US00008",
       "responseSecondsSum": 131,
       "responseOrdersCount": 15,
       "makeSecondsSum": 4161,
       "equivProductsMadeSum": 22.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "07:30",
+      "shopNumber": "US00004",
+      "responseSecondsSum": 220,
+      "responseOrdersCount": 25,
+      "makeSecondsSum": 3632,
+      "equivProductsMadeSum": 34.0,
       "hasProducts": true
     },
     {
@@ -533356,20 +531096,20 @@
       "date": "2026-08-05",
       "slot": "07:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 171,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 3376,
-      "equivProductsMadeSum": 22.0,
+      "responseSecondsSum": 177,
+      "responseOrdersCount": 19,
+      "makeSecondsSum": 3566,
+      "equivProductsMadeSum": 23.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "07:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 96,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2090,
-      "equivProductsMadeSum": 20.0,
+      "responseSecondsSum": 126,
+      "responseOrdersCount": 14,
+      "makeSecondsSum": 2849,
+      "equivProductsMadeSum": 27.0,
       "hasProducts": true
     },
     {
@@ -533405,21 +531145,21 @@
     {
       "date": "2026-08-05",
       "slot": "08:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 314,
-      "responseOrdersCount": 36,
-      "makeSecondsSum": 6072,
-      "equivProductsMadeSum": 39.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "08:00",
       "shopNumber": "US00001",
       "responseSecondsSum": 181,
       "responseOrdersCount": 21,
       "makeSecondsSum": 2562,
       "equivProductsMadeSum": 27.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "08:00",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 339,
+      "responseOrdersCount": 39,
+      "makeSecondsSum": 6442,
+      "equivProductsMadeSum": 42.0,
       "hasProducts": true
     },
     {
@@ -533565,21 +531305,21 @@
     {
       "date": "2026-08-05",
       "slot": "08:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 375,
-      "responseOrdersCount": 45,
-      "makeSecondsSum": 10084,
-      "equivProductsMadeSum": 54.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "08:30",
       "shopNumber": "US00020",
       "responseSecondsSum": 161,
       "responseOrdersCount": 19,
       "makeSecondsSum": 2331,
       "equivProductsMadeSum": 23.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "08:30",
+      "shopNumber": "US00008",
+      "responseSecondsSum": 375,
+      "responseOrdersCount": 45,
+      "makeSecondsSum": 10084,
+      "equivProductsMadeSum": 54.0,
       "hasProducts": true
     },
     {
@@ -533596,10 +531336,20 @@
       "date": "2026-08-05",
       "slot": "08:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 300,
+      "responseSecondsSum": 310,
+      "responseOrdersCount": 36,
+      "makeSecondsSum": 5219,
+      "equivProductsMadeSum": 44.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "08:30",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 311,
       "responseOrdersCount": 35,
-      "makeSecondsSum": 5140,
-      "equivProductsMadeSum": 43.0,
+      "makeSecondsSum": 12640,
+      "equivProductsMadeSum": 41.0,
       "hasProducts": true
     },
     {
@@ -533610,16 +531360,6 @@
       "responseOrdersCount": 38,
       "makeSecondsSum": 6681,
       "equivProductsMadeSum": 45.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "08:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 293,
-      "responseOrdersCount": 33,
-      "makeSecondsSum": 12195,
-      "equivProductsMadeSum": 38.0,
       "hasProducts": true
     },
     {
@@ -533646,10 +531386,10 @@
       "date": "2026-08-05",
       "slot": "09:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 259,
-      "responseOrdersCount": 30,
-      "makeSecondsSum": 4642,
-      "equivProductsMadeSum": 40.0,
+      "responseSecondsSum": 265,
+      "responseOrdersCount": 31,
+      "makeSecondsSum": 4732,
+      "equivProductsMadeSum": 41.0,
       "hasProducts": true
     },
     {
@@ -533665,16 +531405,6 @@
     {
       "date": "2026-08-05",
       "slot": "09:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 222,
-      "responseOrdersCount": 25,
-      "makeSecondsSum": 3495,
-      "equivProductsMadeSum": 30.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "09:00",
       "shopNumber": "US00027",
       "responseSecondsSum": 2896,
       "responseOrdersCount": 26,
@@ -533685,11 +531415,11 @@
     {
       "date": "2026-08-05",
       "slot": "09:00",
-      "shopNumber": "US00002",
-      "responseSecondsSum": 204,
-      "responseOrdersCount": 23,
-      "makeSecondsSum": 18433,
-      "equivProductsMadeSum": 28.0,
+      "shopNumber": "US00001",
+      "responseSecondsSum": 222,
+      "responseOrdersCount": 25,
+      "makeSecondsSum": 3495,
+      "equivProductsMadeSum": 30.0,
       "hasProducts": true
     },
     {
@@ -533705,11 +531435,21 @@
     {
       "date": "2026-08-05",
       "slot": "09:00",
+      "shopNumber": "US00002",
+      "responseSecondsSum": 204,
+      "responseOrdersCount": 23,
+      "makeSecondsSum": 18433,
+      "equivProductsMadeSum": 28.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "09:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 197,
-      "responseOrdersCount": 22,
-      "makeSecondsSum": 6163,
-      "equivProductsMadeSum": 30.0,
+      "responseSecondsSum": 250,
+      "responseOrdersCount": 28,
+      "makeSecondsSum": 8484,
+      "equivProductsMadeSum": 36.0,
       "hasProducts": true
     },
     {
@@ -533826,10 +531566,20 @@
       "date": "2026-08-05",
       "slot": "09:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 215,
-      "responseOrdersCount": 25,
-      "makeSecondsSum": 6371,
-      "equivProductsMadeSum": 38.0,
+      "responseSecondsSum": 303,
+      "responseOrdersCount": 36,
+      "makeSecondsSum": 9164,
+      "equivProductsMadeSum": 51.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "09:30",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 231,
+      "responseOrdersCount": 26,
+      "makeSecondsSum": 6301,
+      "equivProductsMadeSum": 36.0,
       "hasProducts": true
     },
     {
@@ -533840,16 +531590,6 @@
       "responseOrdersCount": 10,
       "makeSecondsSum": 1476,
       "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "09:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 195,
-      "responseOrdersCount": 22,
-      "makeSecondsSum": 5253,
-      "equivProductsMadeSum": 31.0,
       "hasProducts": true
     },
     {
@@ -533885,16 +531625,6 @@
     {
       "date": "2026-08-05",
       "slot": "10:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 141,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 2859,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "10:00",
       "shopNumber": "US00012",
       "responseSecondsSum": 91,
       "responseOrdersCount": 10,
@@ -533905,11 +531635,21 @@
     {
       "date": "2026-08-05",
       "slot": "10:00",
+      "shopNumber": "US00001",
+      "responseSecondsSum": 141,
+      "responseOrdersCount": 16,
+      "makeSecondsSum": 2859,
+      "equivProductsMadeSum": 17.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "10:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 159,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 4570,
-      "equivProductsMadeSum": 21.0,
+      "responseSecondsSum": 168,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 4751,
+      "equivProductsMadeSum": 22.0,
       "hasProducts": true
     },
     {
@@ -533956,10 +531696,10 @@
       "date": "2026-08-05",
       "slot": "10:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 162,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 3050,
-      "equivProductsMadeSum": 23.0,
+      "responseSecondsSum": 178,
+      "responseOrdersCount": 19,
+      "makeSecondsSum": 3322,
+      "equivProductsMadeSum": 25.0,
       "hasProducts": true
     },
     {
@@ -534016,10 +531756,10 @@
       "date": "2026-08-05",
       "slot": "10:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 82,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1323,
-      "equivProductsMadeSum": 13.0,
+      "responseSecondsSum": 107,
+      "responseOrdersCount": 12,
+      "makeSecondsSum": 1618,
+      "equivProductsMadeSum": 16.0,
       "hasProducts": true
     },
     {
@@ -534030,6 +531770,16 @@
       "responseOrdersCount": 29,
       "makeSecondsSum": 3876,
       "equivProductsMadeSum": 34.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "10:30",
+      "shopNumber": "US00027",
+      "responseSecondsSum": 94,
+      "responseOrdersCount": 11,
+      "makeSecondsSum": 1095,
+      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -534076,10 +531826,10 @@
       "date": "2026-08-05",
       "slot": "10:30",
       "shopNumber": "US00003",
-      "responseSecondsSum": 132,
-      "responseOrdersCount": 16,
-      "makeSecondsSum": 1535,
-      "equivProductsMadeSum": 21.0,
+      "responseSecondsSum": 141,
+      "responseOrdersCount": 17,
+      "makeSecondsSum": 1616,
+      "equivProductsMadeSum": 22.0,
       "hasProducts": true
     },
     {
@@ -534090,16 +531840,6 @@
       "responseOrdersCount": 19,
       "makeSecondsSum": 1920,
       "equivProductsMadeSum": 21.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "10:30",
-      "shopNumber": "US00027",
-      "responseSecondsSum": 94,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1095,
-      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -534135,6 +531875,16 @@
     {
       "date": "2026-08-05",
       "slot": "11:00",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 128,
+      "responseOrdersCount": 15,
+      "makeSecondsSum": 2326,
+      "equivProductsMadeSum": 19.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "11:00",
       "shopNumber": "US00005",
       "responseSecondsSum": 117,
       "responseOrdersCount": 13,
@@ -534155,21 +531905,11 @@
     {
       "date": "2026-08-05",
       "slot": "11:00",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 92,
-      "responseOrdersCount": 10,
-      "makeSecondsSum": 1698,
-      "equivProductsMadeSum": 13.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "11:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 158,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 3761,
-      "equivProductsMadeSum": 28.0,
+      "responseSecondsSum": 218,
+      "responseOrdersCount": 24,
+      "makeSecondsSum": 5103,
+      "equivProductsMadeSum": 38.0,
       "hasProducts": true
     },
     {
@@ -534245,11 +531985,11 @@
     {
       "date": "2026-08-05",
       "slot": "11:30",
-      "shopNumber": "US00005",
-      "responseSecondsSum": 159,
-      "responseOrdersCount": 19,
-      "makeSecondsSum": 3524,
-      "equivProductsMadeSum": 28.0,
+      "shopNumber": "US00003",
+      "responseSecondsSum": 57,
+      "responseOrdersCount": 6,
+      "makeSecondsSum": 524,
+      "equivProductsMadeSum": 10.0,
       "hasProducts": true
     },
     {
@@ -534265,21 +532005,21 @@
     {
       "date": "2026-08-05",
       "slot": "11:30",
-      "shopNumber": "US00003",
-      "responseSecondsSum": 57,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 524,
-      "equivProductsMadeSum": 10.0,
+      "shopNumber": "US00005",
+      "responseSecondsSum": 159,
+      "responseOrdersCount": 19,
+      "makeSecondsSum": 3524,
+      "equivProductsMadeSum": 28.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "11:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 149,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 3084,
-      "equivProductsMadeSum": 27.0,
+      "responseSecondsSum": 201,
+      "responseOrdersCount": 23,
+      "makeSecondsSum": 4226,
+      "equivProductsMadeSum": 36.0,
       "hasProducts": true
     },
     {
@@ -534315,20 +532055,20 @@
     {
       "date": "2026-08-05",
       "slot": "11:30",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 123,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 2346,
-      "equivProductsMadeSum": 16.0,
+      "shopNumber": "US00006",
+      "responseSecondsSum": 154,
+      "responseOrdersCount": 17,
+      "makeSecondsSum": 2816,
+      "equivProductsMadeSum": 20.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "11:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 128,
+      "shopNumber": "US00008",
+      "responseSecondsSum": 123,
       "responseOrdersCount": 14,
-      "makeSecondsSum": 2132,
+      "makeSecondsSum": 2346,
       "equivProductsMadeSum": 16.0,
       "hasProducts": true
     },
@@ -534385,16 +532125,6 @@
     {
       "date": "2026-08-05",
       "slot": "12:00",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 318,
-      "responseOrdersCount": 34,
-      "makeSecondsSum": 6098,
-      "equivProductsMadeSum": 49.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "12:00",
       "shopNumber": "US00020",
       "responseSecondsSum": 86,
       "responseOrdersCount": 11,
@@ -534405,11 +532135,21 @@
     {
       "date": "2026-08-05",
       "slot": "12:00",
+      "shopNumber": "US00004",
+      "responseSecondsSum": 318,
+      "responseOrdersCount": 34,
+      "makeSecondsSum": 6098,
+      "equivProductsMadeSum": 49.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "12:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 134,
-      "responseOrdersCount": 15,
-      "makeSecondsSum": 2767,
-      "equivProductsMadeSum": 19.0,
+      "responseSecondsSum": 202,
+      "responseOrdersCount": 23,
+      "makeSecondsSum": 4344,
+      "equivProductsMadeSum": 31.0,
       "hasProducts": true
     },
     {
@@ -534426,10 +532166,10 @@
       "date": "2026-08-05",
       "slot": "12:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 101,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 2014,
-      "equivProductsMadeSum": 16.0,
+      "responseSecondsSum": 119,
+      "responseOrdersCount": 13,
+      "makeSecondsSum": 2201,
+      "equivProductsMadeSum": 18.0,
       "hasProducts": true
     },
     {
@@ -534485,11 +532225,11 @@
     {
       "date": "2026-08-05",
       "slot": "12:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 61,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 3615,
-      "equivProductsMadeSum": 10.0,
+      "shopNumber": "US00004",
+      "responseSecondsSum": 484,
+      "responseOrdersCount": 53,
+      "makeSecondsSum": 17276,
+      "equivProductsMadeSum": 75.0,
       "hasProducts": true
     },
     {
@@ -534505,21 +532245,11 @@
     {
       "date": "2026-08-05",
       "slot": "12:30",
-      "shopNumber": "US00004",
-      "responseSecondsSum": 484,
-      "responseOrdersCount": 53,
-      "makeSecondsSum": 17276,
-      "equivProductsMadeSum": 75.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "12:30",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 39,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 525,
-      "equivProductsMadeSum": 6.0,
+      "shopNumber": "US00025",
+      "responseSecondsSum": 85,
+      "responseOrdersCount": 10,
+      "makeSecondsSum": 4630,
+      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -534535,6 +532265,16 @@
     {
       "date": "2026-08-05",
       "slot": "12:30",
+      "shopNumber": "US00020",
+      "responseSecondsSum": 39,
+      "responseOrdersCount": 4,
+      "makeSecondsSum": 525,
+      "equivProductsMadeSum": 6.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "12:30",
       "shopNumber": "US00003",
       "responseSecondsSum": 140,
       "responseOrdersCount": 16,
@@ -534545,21 +532285,21 @@
     {
       "date": "2026-08-05",
       "slot": "12:30",
-      "shopNumber": "US00027",
-      "responseSecondsSum": 293,
-      "responseOrdersCount": 33,
-      "makeSecondsSum": 7384,
-      "equivProductsMadeSum": 41.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "12:30",
       "shopNumber": "US00001",
       "responseSecondsSum": 230,
       "responseOrdersCount": 25,
       "makeSecondsSum": 3760,
       "equivProductsMadeSum": 36.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "12:30",
+      "shopNumber": "US00027",
+      "responseSecondsSum": 293,
+      "responseOrdersCount": 33,
+      "makeSecondsSum": 7384,
+      "equivProductsMadeSum": 41.0,
       "hasProducts": true
     },
     {
@@ -534586,10 +532326,10 @@
       "date": "2026-08-05",
       "slot": "12:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 173,
-      "responseOrdersCount": 19,
-      "makeSecondsSum": 7598,
-      "equivProductsMadeSum": 28.0,
+      "responseSecondsSum": 192,
+      "responseOrdersCount": 21,
+      "makeSecondsSum": 8859,
+      "equivProductsMadeSum": 31.0,
       "hasProducts": true
     },
     {
@@ -534615,20 +532355,40 @@
     {
       "date": "2026-08-05",
       "slot": "13:00",
-      "shopNumber": "US00008",
-      "responseSecondsSum": 162,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 2548,
-      "equivProductsMadeSum": 26.0,
+      "shopNumber": "US00020",
+      "responseSecondsSum": 78,
+      "responseOrdersCount": 9,
+      "makeSecondsSum": 975,
+      "equivProductsMadeSum": 10.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "13:00",
+      "shopNumber": "US00001",
+      "responseSecondsSum": 122,
+      "responseOrdersCount": 14,
+      "makeSecondsSum": 1357,
+      "equivProductsMadeSum": 16.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "13:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 164,
-      "responseOrdersCount": 19,
-      "makeSecondsSum": 3491,
+      "responseSecondsSum": 198,
+      "responseOrdersCount": 23,
+      "makeSecondsSum": 5063,
+      "equivProductsMadeSum": 32.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "13:00",
+      "shopNumber": "US00008",
+      "responseSecondsSum": 162,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 2548,
       "equivProductsMadeSum": 26.0,
       "hasProducts": true
     },
@@ -534655,26 +532415,6 @@
     {
       "date": "2026-08-05",
       "slot": "13:00",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 122,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 1357,
-      "equivProductsMadeSum": 16.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "13:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 78,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 975,
-      "equivProductsMadeSum": 10.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "13:00",
       "shopNumber": "US00003",
       "responseSecondsSum": 124,
       "responseOrdersCount": 15,
@@ -534696,10 +532436,20 @@
       "date": "2026-08-05",
       "slot": "13:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 151,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 5473,
-      "equivProductsMadeSum": 28.0,
+      "responseSecondsSum": 214,
+      "responseOrdersCount": 25,
+      "makeSecondsSum": 8143,
+      "equivProductsMadeSum": 42.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "13:00",
+      "shopNumber": "US00024",
+      "responseSecondsSum": 27,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 513,
+      "equivProductsMadeSum": 4.0,
       "hasProducts": true
     },
     {
@@ -534714,12 +532464,22 @@
     },
     {
       "date": "2026-08-05",
-      "slot": "13:00",
-      "shopNumber": "US00024",
-      "responseSecondsSum": 27,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 513,
-      "equivProductsMadeSum": 4.0,
+      "slot": "13:30",
+      "shopNumber": "US00025",
+      "responseSecondsSum": 221,
+      "responseOrdersCount": 26,
+      "makeSecondsSum": 4540,
+      "equivProductsMadeSum": 37.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "13:30",
+      "shopNumber": "US00027",
+      "responseSecondsSum": 281,
+      "responseOrdersCount": 32,
+      "makeSecondsSum": 3899,
+      "equivProductsMadeSum": 43.0,
       "hasProducts": true
     },
     {
@@ -534756,10 +532516,10 @@
       "date": "2026-08-05",
       "slot": "13:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 108,
-      "responseOrdersCount": 13,
-      "makeSecondsSum": 3674,
-      "equivProductsMadeSum": 16.0,
+      "responseSecondsSum": 171,
+      "responseOrdersCount": 20,
+      "makeSecondsSum": 10524,
+      "equivProductsMadeSum": 24.0,
       "hasProducts": true
     },
     {
@@ -534775,11 +532535,11 @@
     {
       "date": "2026-08-05",
       "slot": "13:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 183,
-      "responseOrdersCount": 21,
-      "makeSecondsSum": 3682,
-      "equivProductsMadeSum": 31.0,
+      "shopNumber": "US00001",
+      "responseSecondsSum": 170,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 2110,
+      "equivProductsMadeSum": 23.0,
       "hasProducts": true
     },
     {
@@ -534800,26 +532560,6 @@
       "responseOrdersCount": 11,
       "makeSecondsSum": 1639,
       "equivProductsMadeSum": 12.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "13:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 170,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 2110,
-      "equivProductsMadeSum": 23.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "13:30",
-      "shopNumber": "US00027",
-      "responseSecondsSum": 281,
-      "responseOrdersCount": 32,
-      "makeSecondsSum": 3899,
-      "equivProductsMadeSum": 43.0,
       "hasProducts": true
     },
     {
@@ -534846,10 +532586,10 @@
       "date": "2026-08-05",
       "slot": "14:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 157,
-      "responseOrdersCount": 18,
-      "makeSecondsSum": 6564,
-      "equivProductsMadeSum": 22.0,
+      "responseSecondsSum": 190,
+      "responseOrdersCount": 22,
+      "makeSecondsSum": 8278,
+      "equivProductsMadeSum": 27.0,
       "hasProducts": true
     },
     {
@@ -534906,10 +532646,10 @@
       "date": "2026-08-05",
       "slot": "14:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 93,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 1938,
-      "equivProductsMadeSum": 16.0,
+      "responseSecondsSum": 119,
+      "responseOrdersCount": 14,
+      "makeSecondsSum": 2476,
+      "equivProductsMadeSum": 20.0,
       "hasProducts": true
     },
     {
@@ -534975,21 +532715,21 @@
     {
       "date": "2026-08-05",
       "slot": "14:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 97,
-      "responseOrdersCount": 11,
-      "makeSecondsSum": 4697,
-      "equivProductsMadeSum": 17.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "14:30",
       "shopNumber": "US00001",
       "responseSecondsSum": 143,
       "responseOrdersCount": 16,
       "makeSecondsSum": 2210,
       "equivProductsMadeSum": 19.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "14:30",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 150,
+      "responseOrdersCount": 17,
+      "makeSecondsSum": 6862,
+      "equivProductsMadeSum": 25.0,
       "hasProducts": true
     },
     {
@@ -535046,10 +532786,10 @@
       "date": "2026-08-05",
       "slot": "14:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 144,
-      "responseOrdersCount": 17,
-      "makeSecondsSum": 3594,
-      "equivProductsMadeSum": 25.0,
+      "responseSecondsSum": 153,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 3775,
+      "equivProductsMadeSum": 26.0,
       "hasProducts": true
     },
     {
@@ -535146,20 +532886,20 @@
       "date": "2026-08-05",
       "slot": "15:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 100,
-      "responseOrdersCount": 14,
-      "makeSecondsSum": 1935,
-      "equivProductsMadeSum": 18.0,
+      "responseSecondsSum": 134,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 2484,
+      "equivProductsMadeSum": 25.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "15:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 67,
-      "responseOrdersCount": 7,
-      "makeSecondsSum": 1743,
-      "equivProductsMadeSum": 10.0,
+      "responseSecondsSum": 132,
+      "responseOrdersCount": 14,
+      "makeSecondsSum": 2871,
+      "equivProductsMadeSum": 22.0,
       "hasProducts": true
     },
     {
@@ -535216,10 +532956,10 @@
       "date": "2026-08-05",
       "slot": "15:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 140,
-      "responseOrdersCount": 15,
-      "makeSecondsSum": 4234,
-      "equivProductsMadeSum": 24.0,
+      "responseSecondsSum": 167,
+      "responseOrdersCount": 18,
+      "makeSecondsSum": 5051,
+      "equivProductsMadeSum": 28.0,
       "hasProducts": true
     },
     {
@@ -535246,10 +532986,10 @@
       "date": "2026-08-05",
       "slot": "15:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 53,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1163,
-      "equivProductsMadeSum": 8.0,
+      "responseSecondsSum": 70,
+      "responseOrdersCount": 8,
+      "makeSecondsSum": 1460,
+      "equivProductsMadeSum": 11.0,
       "hasProducts": true
     },
     {
@@ -535296,10 +533036,10 @@
       "date": "2026-08-05",
       "slot": "15:30",
       "shopNumber": "US00003",
-      "responseSecondsSum": 37,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 718,
-      "equivProductsMadeSum": 5.0,
+      "responseSecondsSum": 45,
+      "responseOrdersCount": 5,
+      "makeSecondsSum": 878,
+      "equivProductsMadeSum": 8.0,
       "hasProducts": true
     },
     {
@@ -535326,10 +533066,10 @@
       "date": "2026-08-05",
       "slot": "16:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 78,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1477,
-      "equivProductsMadeSum": 12.0,
+      "responseSecondsSum": 96,
+      "responseOrdersCount": 11,
+      "makeSecondsSum": 2925,
+      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -535376,10 +533116,10 @@
       "date": "2026-08-05",
       "slot": "16:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 50,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 1432,
-      "equivProductsMadeSum": 7.0,
+      "responseSecondsSum": 79,
+      "responseOrdersCount": 9,
+      "makeSecondsSum": 16710,
+      "equivProductsMadeSum": 13.0,
       "hasProducts": true
     },
     {
@@ -535425,16 +533165,6 @@
     {
       "date": "2026-08-05",
       "slot": "16:00",
-      "shopNumber": "US00020",
-      "responseSecondsSum": 26,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 354,
-      "equivProductsMadeSum": 3.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "16:00",
       "shopNumber": "US00024",
       "responseSecondsSum": 8,
       "responseOrdersCount": 1,
@@ -535444,12 +533174,22 @@
     },
     {
       "date": "2026-08-05",
+      "slot": "16:00",
+      "shopNumber": "US00020",
+      "responseSecondsSum": 26,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 354,
+      "equivProductsMadeSum": 3.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
       "slot": "16:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 82,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 2592,
-      "equivProductsMadeSum": 11.0,
+      "responseSecondsSum": 91,
+      "responseOrdersCount": 10,
+      "makeSecondsSum": 2919,
+      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -535465,21 +533205,21 @@
     {
       "date": "2026-08-05",
       "slot": "16:30",
-      "shopNumber": "US00006",
-      "responseSecondsSum": 85,
-      "responseOrdersCount": 9,
-      "makeSecondsSum": 1475,
-      "equivProductsMadeSum": 11.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "16:30",
       "shopNumber": "US00005",
       "responseSecondsSum": 87,
       "responseOrdersCount": 10,
       "makeSecondsSum": 2772,
       "equivProductsMadeSum": 13.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "16:30",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 114,
+      "responseOrdersCount": 12,
+      "makeSecondsSum": 1880,
+      "equivProductsMadeSum": 14.0,
       "hasProducts": true
     },
     {
@@ -535576,10 +533316,10 @@
       "date": "2026-08-05",
       "slot": "17:00",
       "shopNumber": "US00003",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 229,
-      "equivProductsMadeSum": 2.0,
+      "responseSecondsSum": 26,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 618,
+      "equivProductsMadeSum": 4.0,
       "hasProducts": true
     },
     {
@@ -535656,10 +533396,10 @@
       "date": "2026-08-05",
       "slot": "17:00",
       "shopNumber": "US00006",
-      "responseSecondsSum": 18,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 543,
-      "equivProductsMadeSum": 2.0,
+      "responseSecondsSum": 27,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 665,
+      "equivProductsMadeSum": 3.0,
       "hasProducts": true
     },
     {
@@ -535670,6 +533410,16 @@
       "responseOrdersCount": 2,
       "makeSecondsSum": 289,
       "equivProductsMadeSum": 2.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "17:30",
+      "shopNumber": "US00025",
+      "responseSecondsSum": 66,
+      "responseOrdersCount": 8,
+      "makeSecondsSum": 1239,
+      "equivProductsMadeSum": 8.0,
       "hasProducts": true
     },
     {
@@ -535695,16 +533445,6 @@
     {
       "date": "2026-08-05",
       "slot": "17:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 35,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 550,
-      "equivProductsMadeSum": 4.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "17:30",
       "shopNumber": "US00004",
       "responseSecondsSum": 77,
       "responseOrdersCount": 8,
@@ -535716,10 +533456,20 @@
       "date": "2026-08-05",
       "slot": "17:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 58,
-      "responseOrdersCount": 6,
-      "makeSecondsSum": 1577,
-      "equivProductsMadeSum": 10.0,
+      "responseSecondsSum": 66,
+      "responseOrdersCount": 7,
+      "makeSecondsSum": 1721,
+      "equivProductsMadeSum": 11.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "17:30",
+      "shopNumber": "US00012",
+      "responseSecondsSum": 9,
+      "responseOrdersCount": 1,
+      "makeSecondsSum": 163,
+      "equivProductsMadeSum": 1.0,
       "hasProducts": true
     },
     {
@@ -535739,16 +533489,6 @@
       "responseSecondsSum": 9,
       "responseOrdersCount": 1,
       "makeSecondsSum": 72,
-      "equivProductsMadeSum": 1.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "17:30",
-      "shopNumber": "US00012",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 163,
       "equivProductsMadeSum": 1.0,
       "hasProducts": true
     },
@@ -535796,10 +533536,10 @@
       "date": "2026-08-05",
       "slot": "18:00",
       "shopNumber": "US00003",
-      "responseSecondsSum": 10,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 133,
-      "equivProductsMadeSum": 1.0,
+      "responseSecondsSum": 28,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 303,
+      "equivProductsMadeSum": 4.0,
       "hasProducts": true
     },
     {
@@ -535815,21 +533555,21 @@
     {
       "date": "2026-08-05",
       "slot": "18:00",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 42,
-      "responseOrdersCount": 5,
-      "makeSecondsSum": 826,
-      "equivProductsMadeSum": 8.0,
-      "hasProducts": true
-    },
-    {
-      "date": "2026-08-05",
-      "slot": "18:00",
       "shopNumber": "US00008",
       "responseSecondsSum": 34,
       "responseOrdersCount": 4,
       "makeSecondsSum": 595,
       "equivProductsMadeSum": 4.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-05",
+      "slot": "18:00",
+      "shopNumber": "US00025",
+      "responseSecondsSum": 69,
+      "responseOrdersCount": 8,
+      "makeSecondsSum": 1232,
+      "equivProductsMadeSum": 11.0,
       "hasProducts": true
     },
     {
@@ -535905,21 +533645,21 @@
     {
       "date": "2026-08-05",
       "slot": "18:30",
-      "shopNumber": "US00001",
-      "responseSecondsSum": 25,
-      "responseOrdersCount": 3,
-      "makeSecondsSum": 642,
-      "equivProductsMadeSum": 5.0,
+      "shopNumber": "US00025",
+      "responseSecondsSum": 63,
+      "responseOrdersCount": 7,
+      "makeSecondsSum": 2237,
+      "equivProductsMadeSum": 9.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "18:30",
-      "shopNumber": "US00025",
-      "responseSecondsSum": 36,
-      "responseOrdersCount": 4,
-      "makeSecondsSum": 1541,
-      "equivProductsMadeSum": 4.0,
+      "shopNumber": "US00001",
+      "responseSecondsSum": 25,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 642,
+      "equivProductsMadeSum": 5.0,
       "hasProducts": true
     },
     {
@@ -536006,35 +533746,35 @@
       "date": "2026-08-05",
       "slot": "19:30",
       "shopNumber": "US00025",
-      "responseSecondsSum": 9,
-      "responseOrdersCount": 1,
-      "makeSecondsSum": 97,
-      "equivProductsMadeSum": 1.0,
+      "responseSecondsSum": 39,
+      "responseOrdersCount": 4,
+      "makeSecondsSum": 1089,
+      "equivProductsMadeSum": 6.0,
       "hasProducts": true
     },
     {
       "date": "2026-08-05",
       "slot": "19:30",
       "shopNumber": "US00006",
-      "responseSecondsSum": 0,
-      "responseOrdersCount": 0,
-      "makeSecondsSum": 0,
-      "equivProductsMadeSum": 0.0,
-      "hasProducts": false
+      "responseSecondsSum": 28,
+      "responseOrdersCount": 3,
+      "makeSecondsSum": 569,
+      "equivProductsMadeSum": 3.0,
+      "hasProducts": true
     }
   ],
   "comparisonWindows": {
     "primary": {
-      "startDate": "2026-08-05",
-      "endDate": "2026-08-05"
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-06"
     },
     "wow": {
-      "startDate": "2026-07-29",
-      "endDate": "2026-07-29"
+      "startDate": "2026-07-30",
+      "endDate": "2026-07-30"
     },
     "mom": {
-      "startDate": "2026-07-06",
-      "endDate": "2026-07-06"
+      "startDate": "2026-07-07",
+      "endDate": "2026-07-07"
     }
   },
   "sources": {
@@ -536046,10 +533786,10 @@
     "equivProductsMade": "pipeline-mapping"
   },
   "collectorTimestamps": {
-    "daily": "2026-08-05T23:45:10Z",
-    "efficiencyDuration": "2026-08-05T23:45:10Z",
-    "avgOrderResponse": "2026-08-05T23:45:10Z",
-    "avgEquivMakeTime": "2026-08-05T23:45:10Z",
-    "equivProductsMade": "2026-08-05T23:45:10Z"
+    "daily": "2026-08-06T05:01:53Z",
+    "efficiencyDuration": "2026-08-06T05:01:53Z",
+    "avgOrderResponse": "2026-08-06T05:01:53Z",
+    "avgEquivMakeTime": "2026-08-06T05:01:53Z",
+    "equivProductsMade": "2026-08-06T05:01:53Z"
   }
 }
