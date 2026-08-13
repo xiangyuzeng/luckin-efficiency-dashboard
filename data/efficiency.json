@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T05:01:50Z",
+  "generatedAt": "2026-08-13T11:00:14Z",
   "timezone": "US/Eastern",
   "retentionDays": 180,
   "backlogThresholdMin": 10,
@@ -30305,8 +30305,8 @@
     {
       "date": "2026-08-13",
       "shopNumber": "US00006",
-      "operatingToday": false,
-      "totalOrders": 0,
+      "operatingToday": true,
+      "totalOrders": 1,
       "completedOrders": 0,
       "backlogOrders": 0,
       "responseSecondsSum": 0,
@@ -536111,6 +536111,16 @@
       "makeSecondsSum": 830,
       "equivProductsMadeSum": 7.25,
       "hasProducts": true
+    },
+    {
+      "date": "2026-08-13",
+      "slot": "07:00",
+      "shopNumber": "US00006",
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "hasProducts": false
     }
   ],
   "comparisonWindows": {
@@ -536136,10 +536146,10 @@
     "equivProductsMade": "pipeline-mapping"
   },
   "collectorTimestamps": {
-    "daily": "2026-08-13T05:01:50Z",
-    "efficiencyDuration": "2026-08-13T05:01:50Z",
-    "avgOrderResponse": "2026-08-13T05:01:50Z",
-    "avgEquivMakeTime": "2026-08-13T05:01:50Z",
-    "equivProductsMade": "2026-08-13T05:01:50Z"
+    "daily": "2026-08-13T11:00:14Z",
+    "efficiencyDuration": "2026-08-13T11:00:14Z",
+    "avgOrderResponse": "2026-08-13T11:00:14Z",
+    "avgEquivMakeTime": "2026-08-13T11:00:14Z",
+    "equivProductsMade": "2026-08-13T11:00:14Z"
   }
 }
