@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T23:30:10Z",
+  "generatedAt": "2026-08-16T23:45:10Z",
   "timezone": "US/Eastern",
   "retentionDays": 180,
   "backlogThresholdMin": 10,
@@ -30376,14 +30376,14 @@
       "date": "2026-08-16",
       "shopNumber": "US00025",
       "operatingToday": true,
-      "totalOrders": 513,
-      "completedOrders": 509,
+      "totalOrders": 518,
+      "completedOrders": 512,
       "backlogOrders": 0,
-      "responseSecondsSum": 4375,
-      "responseOrdersCount": 509,
-      "makeSecondsSum": 80313,
-      "equivProductsMadeSum": 758.0,
-      "freshMadeCount": 758,
+      "responseSecondsSum": 4403,
+      "responseOrdersCount": 512,
+      "makeSecondsSum": 80851,
+      "equivProductsMadeSum": 763.0,
+      "freshMadeCount": 763,
       "purchasedCount": 0
     },
     {
@@ -539606,11 +539606,21 @@
       "date": "2026-08-16",
       "slot": "19:00",
       "shopNumber": "US00025",
-      "responseSecondsSum": 17,
-      "responseOrdersCount": 2,
-      "makeSecondsSum": 318,
-      "equivProductsMadeSum": 2.0,
+      "responseSecondsSum": 45,
+      "responseOrdersCount": 5,
+      "makeSecondsSum": 856,
+      "equivProductsMadeSum": 7.0,
       "hasProducts": true
+    },
+    {
+      "date": "2026-08-16",
+      "slot": "19:30",
+      "shopNumber": "US00025",
+      "responseSecondsSum": 0,
+      "responseOrdersCount": 0,
+      "makeSecondsSum": 0,
+      "equivProductsMadeSum": 0.0,
+      "hasProducts": false
     }
   ],
   "comparisonWindows": {
@@ -539636,10 +539646,10 @@
     "equivProductsMade": "pipeline-mapping"
   },
   "collectorTimestamps": {
-    "daily": "2026-08-16T23:30:10Z",
-    "efficiencyDuration": "2026-08-16T23:30:10Z",
-    "avgOrderResponse": "2026-08-16T23:30:10Z",
-    "avgEquivMakeTime": "2026-08-16T23:30:10Z",
-    "equivProductsMade": "2026-08-16T23:30:10Z"
+    "daily": "2026-08-16T23:45:10Z",
+    "efficiencyDuration": "2026-08-16T23:45:10Z",
+    "avgOrderResponse": "2026-08-16T23:45:10Z",
+    "avgEquivMakeTime": "2026-08-16T23:45:10Z",
+    "equivProductsMade": "2026-08-16T23:45:10Z"
   }
 }
