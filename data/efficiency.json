@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T22:45:10Z",
+  "generatedAt": "2026-08-20T23:00:12Z",
   "timezone": "US/Eastern",
   "retentionDays": 180,
   "backlogThresholdMin": 10,
@@ -30236,14 +30236,14 @@
       "date": "2026-08-20",
       "shopNumber": "US00001",
       "operatingToday": true,
-      "totalOrders": 332,
-      "completedOrders": 322,
+      "totalOrders": 333,
+      "completedOrders": 324,
       "backlogOrders": 0,
-      "responseSecondsSum": 2844,
-      "responseOrdersCount": 322,
-      "makeSecondsSum": 45710,
-      "equivProductsMadeSum": 400.5,
-      "freshMadeCount": 398,
+      "responseSecondsSum": 2862,
+      "responseOrdersCount": 324,
+      "makeSecondsSum": 45953,
+      "equivProductsMadeSum": 403.5,
+      "freshMadeCount": 401,
       "purchasedCount": 10
     },
     {
@@ -30251,13 +30251,13 @@
       "shopNumber": "US00002",
       "operatingToday": true,
       "totalOrders": 212,
-      "completedOrders": 190,
+      "completedOrders": 191,
       "backlogOrders": 4,
-      "responseSecondsSum": 1723,
-      "responseOrdersCount": 190,
-      "makeSecondsSum": 35696,
-      "equivProductsMadeSum": 239.0,
-      "freshMadeCount": 238,
+      "responseSecondsSum": 1732,
+      "responseOrdersCount": 191,
+      "makeSecondsSum": 35913,
+      "equivProductsMadeSum": 241.0,
+      "freshMadeCount": 240,
       "purchasedCount": 4
     },
     {
@@ -30292,15 +30292,15 @@
       "date": "2026-08-20",
       "shopNumber": "US00005",
       "operatingToday": true,
-      "totalOrders": 339,
-      "completedOrders": 329,
+      "totalOrders": 341,
+      "completedOrders": 331,
       "backlogOrders": 3,
-      "responseSecondsSum": 2906,
-      "responseOrdersCount": 329,
-      "makeSecondsSum": 47626,
-      "equivProductsMadeSum": 425.5,
-      "freshMadeCount": 424,
-      "purchasedCount": 6
+      "responseSecondsSum": 2925,
+      "responseOrdersCount": 331,
+      "makeSecondsSum": 47872,
+      "equivProductsMadeSum": 427.75,
+      "freshMadeCount": 426,
+      "purchasedCount": 7
     },
     {
       "date": "2026-08-20",
@@ -540936,11 +540936,11 @@
       "date": "2026-08-20",
       "slot": "18:30",
       "shopNumber": "US00001",
-      "responseSecondsSum": 0,
-      "responseOrdersCount": 0,
-      "makeSecondsSum": 0,
-      "equivProductsMadeSum": 0.0,
-      "hasProducts": false
+      "responseSecondsSum": 18,
+      "responseOrdersCount": 2,
+      "makeSecondsSum": 243,
+      "equivProductsMadeSum": 3.0,
+      "hasProducts": true
     },
     {
       "date": "2026-08-20",
@@ -540976,11 +540976,21 @@
       "date": "2026-08-20",
       "slot": "18:30",
       "shopNumber": "US00002",
-      "responseSecondsSum": 0,
-      "responseOrdersCount": 0,
-      "makeSecondsSum": 0,
-      "equivProductsMadeSum": 0.0,
-      "hasProducts": false
+      "responseSecondsSum": 9,
+      "responseOrdersCount": 1,
+      "makeSecondsSum": 217,
+      "equivProductsMadeSum": 2.0,
+      "hasProducts": true
+    },
+    {
+      "date": "2026-08-20",
+      "slot": "18:30",
+      "shopNumber": "US00005",
+      "responseSecondsSum": 19,
+      "responseOrdersCount": 2,
+      "makeSecondsSum": 246,
+      "equivProductsMadeSum": 2.25,
+      "hasProducts": true
     }
   ],
   "comparisonWindows": {
@@ -541006,10 +541016,10 @@
     "equivProductsMade": "pipeline-mapping"
   },
   "collectorTimestamps": {
-    "daily": "2026-08-20T22:45:10Z",
-    "efficiencyDuration": "2026-08-20T22:45:10Z",
-    "avgOrderResponse": "2026-08-20T22:45:10Z",
-    "avgEquivMakeTime": "2026-08-20T22:45:10Z",
-    "equivProductsMade": "2026-08-20T22:45:10Z"
+    "daily": "2026-08-20T23:00:12Z",
+    "efficiencyDuration": "2026-08-20T23:00:12Z",
+    "avgOrderResponse": "2026-08-20T23:00:12Z",
+    "avgEquivMakeTime": "2026-08-20T23:00:12Z",
+    "equivProductsMade": "2026-08-20T23:00:12Z"
   }
 }
