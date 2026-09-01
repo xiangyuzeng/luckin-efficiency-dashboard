@@ -137,10 +137,8 @@ def collect_realtime() -> dict[str, StoreBacklog]:
             # This query had no date bound at all: "still open and older than
             # BACKLOG_THRESHOLD_MIN" is true of every unfinished order ever
             # taken, so it counted 7,018 orders going back to 2025-06-11 when
-            # the real answer for 2026-09-01 was 6. The 压单 figure on the
-            # board — the whole point of this dashboard — was wrong by roughly
-            # three orders of magnitude, and it got that way silently because
-            # nothing about the number looks impossible.
+            # the real answer for 2026-09-01 was 6 — the 压单 figure was off by
+            # roughly three orders of magnitude for as long as it ran.
             #
             # It also made this the most expensive query in the pipeline: a
             # full scan of t_order joined into t_order_item (3 GB), every 15
