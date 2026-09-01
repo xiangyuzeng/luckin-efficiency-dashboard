@@ -17,8 +17,9 @@ from __future__ import annotations
 import json
 import sys
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from config.category_mapping import EQUIV_WEIGHT_PURCHASED, FRESH_MADE, PURCHASED
 from config.settings import (
@@ -41,6 +42,27 @@ class StoreBacklog:
     backlog_orders_open: int = 0
     total_orders_today: int = 0
     backlog_orders_today: int = 0
+
+
+def _et_day_bounds() -> tuple[str, str]:
+    """Today's US/Eastern day as [start, end) literals for CONVERT_TZ.
+
+    Both realtime queries used to express "today" in a way the optimizer could
+    not use. The first wrapped the indexed column:
+
+        DATE(CONVERT_TZ(o.pay_time, 'UTC', 'US/Eastern')) = DATE(CONVERT_TZ(UTC_TIMESTAMP(), ...))
+
+    idx_pay_time appears in possible_keys and is then discarded, because a
+    function of pay_time is not pay_time. EXPLAIN: type=ALL, key=NULL,
+    rows=1,337,633 — a full scan of t_order every 15 minutes, all day, to count
+    a few thousand of today's orders.
+
+    Passing the boundaries as constants keeps the column bare and the range
+    usable: type=range, key=idx_pay_time, rows=4,845. About 276x less.
+    """
+    today = datetime.now(ZoneInfo("US/Eastern")).date()
+    return (today.isoformat() + " 00:00:00",
+            (today + timedelta(days=1)).isoformat() + " 00:00:00")
 
 
 def _excluded_clause(alias: str) -> str:
@@ -69,6 +91,7 @@ def collect_realtime() -> dict[str, StoreBacklog]:
     in_fresh = ",".join(["%s"] * len(FRESH_LIST))
     in_purchased = ",".join(["%s"] * len(PURCHASED_LIST))
     excluded = _excluded_clause("o.shop_number")
+    day_start, day_end = _et_day_bounds()
 
     try:
         with conn.cursor() as cur:
@@ -93,12 +116,13 @@ def collect_realtime() -> dict[str, StoreBacklog]:
                 FROM luckyus_sales_order.t_order o
                 LEFT JOIN luckyus_sales_order.t_order_make m ON m.order_id = o.id AND m.tenant = o.tenant
                 WHERE o.tenant = %s
-                  AND o.pay_time IS NOT NULL
-                  AND DATE(CONVERT_TZ(o.pay_time, 'UTC', 'US/Eastern')) = DATE(CONVERT_TZ(UTC_TIMESTAMP(), 'UTC', 'US/Eastern'))
+                  AND o.pay_time >= CONVERT_TZ(%s, 'US/Eastern', 'UTC')
+                  AND o.pay_time <  CONVERT_TZ(%s, 'US/Eastern', 'UTC')
                   AND {excluded}
                 GROUP BY o.shop_number
                 """,
-                (BACKLOG_THRESHOLD_MIN, BACKLOG_THRESHOLD_MIN, BACKLOG_THRESHOLD_MIN, TENANT),
+                (BACKLOG_THRESHOLD_MIN, BACKLOG_THRESHOLD_MIN, BACKLOG_THRESHOLD_MIN,
+                 TENANT, day_start, day_end),
             )
             for r in cur.fetchall():
                 shop = r["shop"]
@@ -108,7 +132,20 @@ def collect_realtime() -> dict[str, StoreBacklog]:
                 by_shop[shop].backlog_orders_today = int(r["backlog_today"] or 0)
                 by_shop[shop].backlog_orders_open = int(r["open_overdue"] or 0)
 
-            # Equiv products for currently-open overdue orders
+            # Equiv products for currently-open overdue orders.
+            #
+            # This query had no date bound at all: "still open and older than
+            # BACKLOG_THRESHOLD_MIN" is true of every unfinished order ever
+            # taken, so it counted 7,018 orders going back to 2025-06-11 when
+            # the real answer for 2026-09-01 was 6. The 压单 figure on the
+            # board — the whole point of this dashboard — was wrong by roughly
+            # three orders of magnitude, and it got that way silently because
+            # nothing about the number looks impossible.
+            #
+            # It also made this the most expensive query in the pipeline: a
+            # full scan of t_order joined into t_order_item (3 GB), every 15
+            # minutes. Bounding it to the ET day fixes the number and the plan
+            # in one edit.
             cur.execute(
                 f"""
                 SELECT
@@ -119,13 +156,15 @@ def collect_realtime() -> dict[str, StoreBacklog]:
                 JOIN luckyus_sales_order.t_order_item i ON i.order_id = o.id AND i.tenant = o.tenant
                 LEFT JOIN luckyus_sales_order.t_order_make m ON m.order_id = o.id AND m.tenant = o.tenant
                 WHERE o.tenant = %s
-                  AND o.pay_time IS NOT NULL
+                  AND o.pay_time >= CONVERT_TZ(%s, 'US/Eastern', 'UTC')
+                  AND o.pay_time <  CONVERT_TZ(%s, 'US/Eastern', 'UTC')
                   AND m.finish_time IS NULL
                   AND TIMESTAMPDIFF(MINUTE, o.pay_time, UTC_TIMESTAMP()) > %s
                   AND {excluded}
                 GROUP BY o.shop_number
                 """,
-                (*FRESH_LIST, *PURCHASED_LIST, TENANT, BACKLOG_THRESHOLD_MIN),
+                (*FRESH_LIST, *PURCHASED_LIST, TENANT, day_start, day_end,
+                 BACKLOG_THRESHOLD_MIN),
             )
             for r in cur.fetchall():
                 shop = r["shop"]
