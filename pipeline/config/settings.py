@@ -55,6 +55,21 @@ BACKLOG_THRESHOLD_MIN: int = 10
 # production collector's GROUP BY semantics).
 RETENTION_DAYS: int = 180
 
+# The daily collector used to re-query all RETENTION_DAYS on every run. 180 days
+# covers a large share of t_order (1.34M rows), so the optimizer stops trusting
+# idx_pay_time and scans — 2026-08-25 measured the four daily queries at 13.9 /
+# 49.6 / 9.9 / 37.7 s and 11.4M rows for numbers that had not changed since the
+# previous night (LCNA-DBA-SQL-2026-0901-D, D-04).
+#
+# Each run now re-collects only the last INCREMENTAL_DAYS ET days and splices
+# them into the previous payload. Unlike the store-ops pipeline, the window here
+# is already aligned to ET midnight (collector.py builds explicit start/end
+# dates), so no extra slack day is needed — the oldest day collected is whole.
+INCREMENTAL_DAYS: int = int(os.environ.get("INCREMENTAL_DAYS", "3"))
+# Python weekday(): Monday=0 … Sunday=6.
+FULL_REBUILD_WEEKDAY: int = int(os.environ.get("FULL_REBUILD_WEEKDAY", "6"))
+FORCE_FULL_REBUILD: bool = os.environ.get("FORCE_FULL_REBUILD", "").lower() in {"1", "true", "yes"}
+
 # Staleness thresholds in minutes.
 DAILY_STALE_THRESHOLD_MIN: int = 60 * 24       # daily payload stale after 24h
 REALTIME_STALE_THRESHOLD_MIN: int = 30         # absorbs GHA 15-min cron jitter
